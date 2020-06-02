@@ -1,0 +1,2070 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Program Examples</title>
+<meta name="description"
+      content="">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/docs.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+
+<link rel="stylesheet" href="css/main.css">
+
+
+<link rel="canonical" href="/programming-vb.html">
+<link rel="alternate" type="application/rss+xml" title="J276 NEA Resource Bank" href="/feed.xml">
+
+<style>
+    #jumbotron-header {
+        background: #5B3293;
+        background: linear-gradient(135deg, #5B3293, #5B3293);
+    }
+</style>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stickyfill.min.js"></script>
+<script src='assets/js/docs.min.js'></script>
+
+    </head>
+
+    <body>
+        
+<!--
+<header class="navbar navbar-static-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html">OGAT NEA Resource Bank - J276</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+
+
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                        <li >
+                            <a href="/algorithms-vb.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/debugging-vb.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/evidencing-vb.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="/key-syntax-vb.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li class="active">
+                            <a href="/programming-vb.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/rules-vb.html">Rules</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="/testing-vb.html">Testing</a>
+                        </li>
+                    
+                
+            </ul>
+
+
+
+        </nav>
+    </div>
+</header>
+-->
+
+<header class="navbar navbar-fixed-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">J276 NEA Resource Bank</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="./key-syntax-vb.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li class="active">
+                            <a href="./programming-vb.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./evidencing-vb.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./algorithms-vb.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./testing-vb.html">Testing</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./debugging-vb.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./rules-vb.html">Rules</a>
+                        </li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+        
+    <div class="bs-docs-header" id="jumbotron-header">
+        <div class="container">
+            <h1>Program Examples</h1>
+            <p></p>
+        </div>
+    </div>
+
+
+
+        <div class="container">
+    <div class="bs-docs-container row">
+        <div class="col-md-12" role="main">
+            <div class="bs-docs-section"><h1 id="inputting--outputting-data">Inputting &amp; Outputting Data</h1>
+
+<p>If you want to display something on screen in Visual Basic you can do it in a number of ways. The most common ways you will use are by Message Box or List Box.</p>
+
+<p>To input data in Visual Basic there are lots of different form controls that you can use to do this, the most common ones are text boxes and combo boxes.</p>
+
+<h2 id="inputting---creating-an-interface">Inputting - Creating an Interface</h2>
+<p>Visual Basic have two main parts to it. The first part is creating the user interface, this is a simply drag and drop environment where you can add different form controls such as a text box.</p>
+
+<p>The second part to it is creating the code to make the user interface do/display something.</p>
+
+<p>When creating an interface, there are different types of <strong>form controls</strong>. Some of those that you will use are:</p>
+<ul>
+  <li>Label - used to display text on an interface</li>
+  <li>Text Box - used to allow the user to type in some text</li>
+  <li>Combo Box - used to give a set of options to the user</li>
+  <li>List Box - used to provide a list of options to choose from or display a list of information that has been calculated in the program.</li>
+  <li>Button - these are often used so when the user clicks on them something happens.</li>
+</ul>
+
+<p>In Visual Studio on the left hand side you have the <strong>toolbox</strong>, this is where you can drag and drop your form controls. It looks like this:</p>
+
+<p><img src="imagesvb/interface1vb.png" alt="Interface1" /></p>
+
+<p>When you have dragged your form controls onto your form, you need to name them. You should add a prefix to any form control, the common ones are:</p>
+<ul>
+  <li>Labels - lbl</li>
+  <li>Text Boxes - txt</li>
+  <li>Combo Boxes - cmb</li>
+  <li>List Boxes - lst</li>
+  <li>Buttons - btn</li>
+</ul>
+
+<p>If you had a text box where the user enters their name a suitable name would be txtName.</p>
+
+<p><strong>Difference between naming a control and changing the text</strong>
+You must always name controls, this can be done in the properties next to the option <strong>name</strong>, as shown below:</p>
+
+<p><img src="imagesvb/interface2vb.png" alt="Interface2" /></p>
+
+<p>If you want to change what the form control says on it, you change the option <strong>text</strong>, as shown below:</p>
+
+<p><img src="imagesvb/interface3vb.png" alt="Interface3" /></p>
+
+<h2 id="outputting-data---message-boxes">Outputting Data - Message Boxes</h2>
+<p>Below is an interface where the user will enter a word. When they enter the word in the text box called <code class="highlighter-rouge">txtWord</code> and press the button called <code class="highlighter-rouge">btnRun</code> it will display a message box that says what word they entered.</p>
+
+<p><strong>Interface</strong>
+<img src="imagesvb/outputting1vb.png" alt="Outputting1" /></p>
+
+<p><strong>Code when btnRun clicked</strong></p>
+<pre><code class="language-v">MessageBox.Show("You entered the word " &amp; txtWord.Text)
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/outputting2vb.png" alt="Outputting2" /></p>
+
+<p>The text “You entered the word” is joined with the text box txtWord. As the user entered the word <code class="highlighter-rouge">Hello</code> it takes what it is in the text box and adds it into the message box.</p>
+
+<h2 id="example-program-1---birthday-program">Example program 1 - Birthday Program</h2>
+<p>The code for the program below will allow the user to enter their name, select the day of the week that their birthday falls on this year and then choose the month of their birthday from the list box. When they click the button it should display all the information back to them.</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/outputting3vb.png" alt="Outputting3" /></p>
+
+<p><strong>Code when btnBirthday clicked</strong></p>
+<pre><code class="language-vbnet">MessageBox.Show("Hello " &amp; txtName.Text &amp; vbNewLine &amp; "Your birthday month is " &amp; lstMonth.Text &amp;
+" and the day of the birthday this year is " &amp; cmbDay.Text)
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/outputting4vb.png" alt="Outputting4" /></p>
+
+<h2 id="example-program-2---address-program">Example program 2 - Address Program</h2>
+<p>The code for the program below will allow the user to enter various pieces of information. It will then use the information in these form controls to create a message box with all their information in.</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/outputting5vb.png" alt="Outputting5" /></p>
+
+<p><strong>Code when btnDisplay clicked</strong></p>
+<pre><code class="language-vbnet">MessageBox.Show("Address Details" &amp; vbNewLine &amp; "Street: " &amp; txtNumber.Text &amp; " " &amp;
+txtStreet.Text &amp; vbNewLine &amp; "Town/City: " &amp; txtTown.Text &amp; vbNewLine &amp;
+"County: " &amp; txtCounty.Text &amp; vbNewLine &amp; "Postcode: " &amp; txtPostcode.Text)
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/outputting6vb.png" alt="Outputting6" /></p>
+
+<p>You can concatenate (join together) controls with strings in a <code class="highlighter-rouge">MessageBox.Show()</code> command. In the address example <code class="highlighter-rouge">MessageBox.Show("Street: " &amp; txtnumber.Text &amp; " " &amp; txtStreet.Text &amp; vbNewLine &amp; "Town/City: " + txtTown.Text)</code> will combine the strings “Street” and “Town/City” with the form controls txtNumber, txtStreet and txtTown.</p>
+
+<p><code class="highlighter-rouge">vbNewLine</code> is used to start a new line when it is displayed on screen.</p>
+
+<h2 id="outputting-data---list-boxes">Outputting Data - List Boxes</h2>
+<p>One of the other methods of outputting data is through a list box.</p>
+
+<p>To add data to a list box you need to use the following code:</p>
+
+<pre><code class="language-vbnet">Listboxname.Items.Add(Data to add to list box)
+</code></pre>
+<p>Consider the following interface:</p>
+
+<p><img src="imagesvb/outputting7vb.png" alt="Outputting7" /></p>
+
+<p>To add the name entered and the email address entered to the list box when the button is clicked you need the following code:</p>
+
+<p><strong>Code when btnAdd clicked</strong></p>
+<pre><code class="language-vbnet">lstOutput.Items.Add(txtName.Text &amp; vbTab &amp; txtEmail.Text)
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/outputting8vb.png" alt="Outputting8" /></p>
+
+<p>You can add multiple rows of data to a list box. You can simply change the information in the text boxes and click the button again. <strong>vbTab</strong> is used to put a tab space between the two pieces of data.</p>
+
+<p>Sometimes when you use list boxes it makes it difficult to make the formatting look neat, this is shown in the screenshot above where the data is not lined up. To overcome this problem you can use a <strong>list view</strong>.</p>
+
+<p>With a list view box you can add columns and headings to make it look like a table, like the example shown below:</p>
+
+<p><img src="imagesvb/outputting9vb.png" alt="Outputting9" /></p>
+
+<p>When you add a list view control, you have to change a property to get it to work. Change the view from <strong>Large Icon</strong> to <strong>Details</strong>, like shown below:</p>
+
+<p><img src="imagesvb/outputting10vb.png" alt="Outputting10" /></p>
+
+<p>The code for when the button is clicked needs to follow the following format:</p>
+
+<pre><code class="language-vbnet">LISTVIEWBOXNAME.Items.Add(New ListViewItem({COLUMN1, COLUMN2, COLUMN3, COLUMN4, COLUMN5}))
+</code></pre>
+
+<p>For this example, the code would be:</p>
+
+<pre><code class="language-vbnet">lstOutput.Items.Add(New ListViewItem({txtName.Text, txtEmail.Text}))
+</code></pre>
+
+<p>This is because there are only two pieces of information, therefore you only need to fill in the information you want in two of the columns.</p>
+
+<p>As well as adding code for when the button is pressed, you also need to add the column headings when the form loads. You should double click on the form itself and add the code in this subroutine. The format of the code for the column headings is:</p>
+
+<pre><code class="language-vbnet">LISTVIEWBOXNAME.Columns.Add(“Text”, Size , Alignment)
+</code></pre>
+
+<p>In this example as there are two headings the code would be:</p>
+
+<pre><code class="language-vbnet">Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+    lstOutput.Columns.Add("Name", 150, HorizontalAlignment.Left)
+    lstOutput.Columns.Add("Email", 250, HorizontalAlignment.Left)
+End Sub
+</code></pre>
+
+<h2 id="example-3---test-scores---using-list-view">Example 3 - Test Scores - Using List View</h2>
+<p>The code for the program below will allow the user to enter a name and three test scores. When <code class="highlighter-rouge">btnAdd</code> is clicked it will add the information to the list box.</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/outputting11vb.png" alt="Outputting11" /></p>
+
+<pre><code class="language-vbnet">Private Sub btnAdd_Click(sender As System.Object, e As System.EventArgs) Handles btnAdd.Click
+    lstOutput.Items.Add(New ListViewItem({txtName.Text, txtScore1.Text, txtScore2.Text, txtScore3.Text}))
+End Sub
+Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+    lstOutput.Columns.Add("Name", 150, HorizontalAlignment.Left)
+    lstOutput.Columns.Add("Score 1", 75, HorizontalAlignment.Center)
+    lstOutput.Columns.Add("Score 2", 75, HorizontalAlignment.Center)
+    lstOutput.Columns.Add("Score 3", 75, HorizontalAlignment.Center)
+End Sub
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/outputting12vb.png" alt="Outputting12" /></p>
+
+<h1 id="variables">Variables</h1>
+
+<p>A variable is used to temporarily store a piece of data.</p>
+
+<p>For example:</p>
+
+<pre><code class="language-vbnet">Dim number1 As Integer = 10
+</code></pre>
+
+<p>In the code above the variable is called <code class="highlighter-rouge">number1</code> and the value it is storing is 10. Variables can hold any type of data. Using variables makes it easier for people to understand what is going on. In Visual Basic you need to define a variable before you can use it. To do this you type <code class="highlighter-rouge">Dim</code> before the variable name the first time you use it. You should then say what type of data you think it is. In this example <code class="highlighter-rouge">number1</code> is an integer therefore the code to define a variable called <code class="highlighter-rouge">number1</code> as an integer is <code class="highlighter-rouge">Dim number1 as Integer</code></p>
+
+<p>For example:</p>
+
+<pre><code class="language-vbnet">Dim cost As Decimal = 15.5
+Dim VAT As Decimal = 3.1
+Dim total_cost As Decimal = cost + VAT
+</code></pre>
+
+<h2 id="example-program-1---water-tank-capacity-program">Example program 1 - Water Tank Capacity Program</h2>
+<p>The code for the program below will allow the user to enter the height, width and depth of a water tank, then calculate and output the capacity.</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/variables1vb.png" alt="Variables1" /></p>
+
+<p><strong>Code when btnCapacity is clicked</strong></p>
+<pre><code class="language-vbnet">'three variables that store the text box inputs from the interface as a decimal
+Dim height As Decimal = txtHeight.Text
+Dim width As Decimal = txtWidth.Text
+Dim depth As Decimal = txtDepth.Text
+'calculation to work out the capacity
+Dim capacity As Decimal = (height * width * depth) / 1000
+'outputs the capacity of the water tank
+MessageBox.Show("The tank holds " &amp; Decimal.Round(capacity, 2).ToString &amp; " litres of water")
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/variables2vb.png" alt="Variables2" /></p>
+
+<p>The code above rounds the variable capacity, to round a variable you use the <code class="highlighter-rouge">Decimal.Round()</code> function. You write the name of the variable followed by the number of decimal places e.g. <code class="highlighter-rouge">Decimal.Round(capacity,2)</code>. Also note that it has <code class="highlighter-rouge">.ToString</code> after it, this is because any variable that is not a <code class="highlighter-rouge">string</code> data type much be converted back to a string before it can be displayed in a message or list box.</p>
+
+<h2 id="example-program-2---cylinder-volume-program">Example program 2 - Cylinder Volume Program</h2>
+<p>The code for the program below will allow the radius and height of a circle, then calculate and output the volume and surface area.</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/variables3vb.png" alt="Variables3" /></p>
+
+<p><strong>Code when btnCalculate is clicked</strong></p>
+<pre><code class="language-vbnet">'three variables that store the two inputs from the interface and the value of pie
+Dim radius As Decimal = txtRadius.Text
+Dim height As Decimal = txtHeight.Text
+Dim pie As Decimal = 3.14159
+'calculations to work out the volume and surface area
+Dim volume As Decimal = pie * (radius * radius) * height
+Dim surfaceArea As Decimal= 2 * (pie * (radius * radius)) + 2 * (pie * radius * height)
+#outputs the volume and surface area of the cylinder in a message box.
+MessageBox.Show("The volume of your cylinder is: " &amp; Decimal.Round(volume, 2).ToString &amp; " to 2 decimal places" &amp; vbNewLine &amp; "The surface area of the cylinder is: " &amp; Decimal.Round(surfaceArea, 2).ToString &amp; " to 2 decimal places.")
+</code></pre>
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/variables4vb.png" alt="Variables4" /></p>
+
+<h1 id="selection-if-then-else">Selection (if, then, else)</h1>
+
+<p>Sometimes you will change what do you depending on the conditions.</p>
+
+<p>For example:
+IF you wake up in the morning and it is raining THEN you will take a coat to school OTHERWISE you wont.</p>
+
+<p>IF the day is a Saturday AND the alarm clock goes off THEN you might turn it off and stay in bed OTHERWISE you might get up.</p>
+
+<p>Life is full of decisions that you will make depending on certain conditions, computers are no different.</p>
+
+<h2 id="if-else">if-else</h2>
+
+<p>For a computer to make decisions based on a condition, you must use an IF statement, it has the following structure:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>If condition Then
+	true
+	several instructions that are executed
+	if the calcualation evaluates to True
+Else
+	false
+	several instructions that are exectued
+	if the condition evaluates to False
+End If
+</code></pre>
+</div>
+
+<p>Consider the following IF statement:</p>
+<pre><code class="language-vbnet">Dim age As Integer = txtAge.Text
+If age &gt;= 18 Then
+	MessageBox.Show("You are an adult")
+Else
+	MessageBox.Show("You are still a child")
+End If
+</code></pre>
+<p>The IF statement explained:</p>
+<ul>
+  <li>after the <code class="highlighter-rouge">if</code> is the condition <code class="highlighter-rouge">age &gt;= 18</code>, this is checking to see if the age variable is more than or equal to 18.</li>
+  <li>after that line is code is the code that will only be run if that condition is <code class="highlighter-rouge">True</code>. If it is true it will display a message box that says <code class="highlighter-rouge">You are an adult</code>.</li>
+  <li>the word else then follows. The instructions underneath this are what will be run only if that condition is <code class="highlighter-rouge">False</code>. If it is false it will display a message box that says <code class="highlighter-rouge">You are still a child</code>.</li>
+</ul>
+
+<h1 id="if-elseif-else">if-elseif-else</h1>
+
+<p>An IF statement with an else will only allow you to check a single condition, however if you have more than one condition to check you can use <code class="highlighter-rouge">if..elseif..else</code></p>
+
+<p>Consider the following IF statement:</p>
+<pre><code class="language-vbnet">Dim colour As String = cmbColour.Text
+If colour = "Red" Then
+	MessageBox.Show("STOP")
+Elseif colour = "Amber" Then
+	MessageBox.Show("GET READY TO STOP")
+Else
+	MessageBox.Show("GO")
+End If
+</code></pre>
+
+<p>The IF statement explained:</p>
+<ul>
+  <li>the program first checks to see if the colour selected in the combo box on the interface is <code class="highlighter-rouge">Red</code> and if it is will display a message box saying <code class="highlighter-rouge">STOP</code>.</li>
+  <li>if the colour selected isn’t red it will go onto the next condition where the <code class="highlighter-rouge">Elseif</code> is and check if the colour is <code class="highlighter-rouge">Amber</code>. If it is then it will display a message box saying  <code class="highlighter-rouge">GET READY TO STOP</code></li>
+  <li>if neither conditions are met it will go to the <code class="highlighter-rouge">Else</code> part of the code and display a message box saying <code class="highlighter-rouge">GO</code>.</li>
+</ul>
+
+<p><strong>NOTE:</strong> It doesn’t need to use <code class="highlighter-rouge">Elseif</code> to see if the colour is <code class="highlighter-rouge">Green</code> as if it isn’t <code class="highlighter-rouge">Red</code> or <code class="highlighter-rouge">Amber</code> it must be <code class="highlighter-rouge">Green</code>, therefore you can just use <code class="highlighter-rouge">else</code> if there are not other options to consider.</p>
+
+<h2 id="example-program-1---capital-city">Example program 1 - Capital City</h2>
+<p>The code for the program below ask the user the capital city of England and display a suitable message depending on whether they enter <code class="highlighter-rouge">London</code>.</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/selection1vb.png" alt="Selection1" /></p>
+
+<p><strong>Code when btnCheck is clicked</strong></p>
+<pre><code class="language-vbnet">'stores the user selection from the combo box in the variable city
+Dim city As String = cmbCity.Text
+'checks if the city variable has London stored in it
+If city = "London" Then
+    'displays correct if the condition is true
+    MessageBox.Show("Correct, the capital city of England is: " &amp; city)
+Else
+     'displays wrong if they have entered something else
+     MessageBox.Show("Wrong, try again!")
+End If
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/selection2vb.png" alt="Selection2" /></p>
+
+<h2 id="example-program-2---grade-calculator-program">Example program 2 - Grade Calculator Program</h2>
+<p>The code for the program below will ask the user to enter a score on a test and then decide what grade they got.</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/selection3vb.png" alt="Selection3" /></p>
+
+<p><strong>Code when btnGradeCheck is clicked</strong></p>
+<pre><code class="language-vbnet">Dim score As Integer = txtScore.Text
+If score &gt;= 70 Then
+    MessageBox.Show("That test score is an A grade")
+ElseIf score &gt;= 60 Then
+    MessageBox.Show("That test score is a B grade")
+ElseIf score &gt;= 50 Then
+    MessageBox.Show("That test score is a C grade")
+ElseIf score &gt;= 40 Then
+    MessageBox.Show("That test score is a D grade")
+Else
+    MessageBox.Show("That test score is a U grade")
+End If
+</code></pre>
+
+<p><strong>NOTE:</strong> When <code class="highlighter-rouge">ElseIf</code> is used it will only check the next condition <code class="highlighter-rouge">If</code> the previous condition is false.</p>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/selection4vb.png" alt="Selection4" /></p>
+
+<h2 id="example-program-3---taxi-fare-calculator-program">Example program 3 - Taxi Fare Calculator Program</h2>
+<p>The code for the program below will calculate the fare for a taxi ride depending on the distance and number of passengers. It should add 50% onto the total if there are more than 5 passengers.</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/selection5vb.png" alt="Selection5" /></p>
+
+<p><strong>Code when btnFare is clicked</strong></p>
+<pre><code class="language-vbnet">'declares a variable called distance to store the distance entered
+Dim distance As Integer = txtDistance.Text
+'declares a variable called passengers to store the number of passengers entered
+Dim passengers As Integer = txtPassengers.Text
+'declares a variable called cost and then uses a calculation to work out the cost
+Dim cost As Decimal = 3 + ((distance - 1) * 2)
+'checks to see if the number of passengers is more than 5 so that the additional 50% cost can be added
+If passengers &gt; 5 Then
+    'calculates the extra cost if the condition is true
+    cost = cost * 1.5
+End If
+'a message box to display the total cost of the journey
+MessageBox.Show("The cost of the journey is: " &amp; FormatCurrency(cost).ToString)
+</code></pre>
+<p><strong>Important Points to Note</strong></p>
+<ul>
+  <li>there is no <code class="highlighter-rouge">Else</code> on this <code class="highlighter-rouge">If</code>, you do not need to have one. An if can just check a condition and do something if it is <code class="highlighter-rouge">True</code> and nothing if it is <code class="highlighter-rouge">False</code></li>
+  <li>in the <code class="highlighter-rouge">MessageBox.Show()</code> command the cost is formatted to currency, this is done by writing <code class="highlighter-rouge">FormatCurrency(variable)</code></li>
+</ul>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/selection6vb.png" alt="Selection6" /></p>
+
+<h1 id="validating-data">Validating Data</h1>
+
+<h2 id="what-is-validation">What is Validation?</h2>
+<p>Validation is the process of checking to see if data that is entered meets a set of requirements, this does mean it will always stop incorrect data being entered. For example if you had to enter a telephone number, you could validate it and say it needs to be 11 digits starting with a 0. The user could enter 01234567891, this meets the requirements set, but does not mean it is a valid telephone number.</p>
+
+<p>There are some simple ways in which you can validate programs, these are:</p>
+<ul>
+  <li><strong>Type Check</strong> - checking the data is of a particular type before continuing</li>
+  <li><strong>Presence Check</strong> - checking that data is entered before continuing</li>
+  <li><strong>Range Check</strong> - checking that data is between two boundaries set</li>
+  <li><strong>Format Check</strong> - checking that data follows a set format</li>
+</ul>
+
+<h2 id="type-check-example">Type Check Example</h2>
+<p>In Visual Basic you can easily do a type check to check whether a value is a number or not a number, see the example below:</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/validation1vb.png" alt="Validation1" /></p>
+
+<p><strong>Code when btnRun is clicked</strong></p>
+<pre><code class="language-vbnet">Dim IsNumbers As Boolean = IsNumeric(txtNumber.Text)
+If IsNumbers = True Then
+    MessageBox.Show("What is entered in txtNumber is a number")
+Else
+    MessageBox.Show("What is entered in txtNumber is not a number")
+End If
+</code></pre>
+
+<p><code class="highlighter-rouge">IsNumeric</code> will return a value either <code class="highlighter-rouge">True</code> or <code class="highlighter-rouge">False</code> after checking to see if a variable or form control is a number. You can then use an <code class="highlighter-rouge">If</code> to determine what to do.</p>
+
+<p>This is what happens when the button is clicked:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="imagesvb/validation2vb.png" alt="Validation2" /></th>
+      <th>Number entered</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="imagesvb/validation3vb.png" alt="Validation3" /></td>
+      <td>Text entered</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="presence-check-example">Presence Check Example</h2>
+<p>In Visual Basic you can use the <code class="highlighter-rouge">len()</code> function to find the length of a variable or form control. You can then check to if the length is 0 and if it is this means nothing has been entered, see the example below:</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/validation4vb.png" alt="Validation4" /></p>
+
+<p><strong>Code when btnCheck is clicked</strong></p>
+<pre><code class="language-vbnet">If Len(txtNumber.Text) = 0 Then
+    MessageBox.Show("Please enter a number")
+    Return
+Else
+    MessageBox.Show("Welcome to the program")
+End If
+</code></pre>
+<p>The <code class="highlighter-rouge">len()</code> function will return the length of the data stored in a variable/control. If the length is 0 this means nothing has been entered. <code class="highlighter-rouge">Return</code> can be used in a program as it will prevent any further code being executed. It stops the program running.</p>
+
+<p>This is what happens when the button is clicked:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="imagesvb/validation5vb.png" alt="Validation5" /></th>
+      <th>Nothing entered</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="imagesvb/validation6vb.png" alt="Validation6" /></td>
+      <td>Something entered</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="range-check-example">Range Check Example</h2>
+<p>You can also validate data by making sure it is within a certain range. For example, entering a test score you could say that it must be between 0 and 100. An example of how you could use a range check is shown below:</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/validation4vb.png" alt="Validation4" /></p>
+
+<p><strong>Code when btnCheck is clicked</strong></p>
+<pre><code class="language-vbnet">If txtNumber.Text &gt; 0 And txtNumber.Text &lt;= 100 Then
+    MessageBox.Show("You entered a valid number")
+Else
+    MessageBox.Show("You must enter a number between 1 and 100")
+End If
+</code></pre>
+
+<p>To perform a range check you can simply use an <code class="highlighter-rouge">If</code> and then use <code class="highlighter-rouge">And</code> to connect two conditions together.</p>
+
+<p>This is what happens when the button is clicked:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="imagesvb/validation7vb.png" alt="Validation7" /></th>
+      <th>Entered out of range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="imagesvb/validation8vb.png" alt="Validation8" /></td>
+      <td>Entered within range</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="format-check-example">Format Check Example</h2>
+<p>If you want to perform a format check in Visual Basic you will need to make use of a library. The <strong>Regular Expressions</strong> library allows you to set a pattern and then check to see if the data follows that pattern.</p>
+
+<p>Below are some examples of Regular Expressions patterns as well as what they mean:</p>
+
+<p><img src="imagesvb/validation9vb.png" alt="Validation9" /></p>
+
+<p>The program below will check if an email meets the right format requirements. For the purpose of this task the requirements are:</p>
+<ul>
+  <li>it must start with at least one alphanumeric character</li>
+  <li>followed by the @ sign</li>
+  <li>followed by at least one alphanumeric character</li>
+  <li>followed by a full stop (.)</li>
+  <li>followed by at least one alphanumeric character.</li>
+</ul>
+
+<p>The regular expression pattern that is needed to do this is:</p>
+<pre><code class="language-vbnet">^[A-Za-z0-9]+\@[A-Za-z0-9]+\.[A-Za-z0-9]+$
+</code></pre>
+
+<p>At the top of your code above <code class="highlighter-rouge">Public Class</code> you need to import the regular expressions library, to do this enter the following code:</p>
+<pre><code class="language-vbnet">Imports System.Text.RegularExpressions
+</code></pre>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/validation10vb.png" alt="Validation10" /></p>
+
+<p><strong>Code when btnValidate is clicked</strong></p>
+<pre><code class="language-vbnet">Dim email As String = txtEmail.Text
+Dim pattern As String = "^[A-Za-z0-9]+\@[A-Za-z0-9]+\.[A-Za-z0-9]+$"
+Dim emailMatch As Match = Regex.Match(email, pattern)
+If emailMatch.Success = True Then
+    MessageBox.Show("This is a valid email format")
+Else
+    MessageBox.Show("This is an invalid email format")
+End If
+</code></pre>
+<p><strong>How it works</strong></p>
+<ul>
+  <li><strong>line 1</strong> - declares a variable called email to store the contents of txtEmail</li>
+  <li><strong>line 2</strong> - declares a variable called pattern to store the regular expression pattern that will be compared to the email address</li>
+  <li><strong>line 3</strong> - this is a function from the regular expressions library. It will see if the email address matches the pattern set and return either <code class="highlighter-rouge">True</code> or <code class="highlighter-rouge">False</code>. It will then store this in the variable called <code class="highlighter-rouge">emailMatch</code></li>
+  <li><strong>line 4</strong> - this will check if the emailMatch has been successful i.e. if it is <code class="highlighter-rouge">True</code></li>
+  <li><strong>line 5</strong> - if it is it will say it is a valid email</li>
+  <li><strong>line 7</strong> - if it isn’t it will say it is an invalid email</li>
+</ul>
+
+<p>This is what happens when the button is clicked:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="imagesvb/validation11vb.png" alt="Validation11" /></th>
+      <th>Valid</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="imagesvb/validation12vb.png" alt="Validation12" /></td>
+      <td>Invalid</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="iteration---count-controlled">Iteration - Count Controlled</h1>
+
+<p>Iteration is the process of repeating a process over and over. Often in programming you need to repeat a block of code several times.</p>
+
+<h2 id="for-loops">FOR Loops</h2>
+<p>A <code class="highlighter-rouge">for</code> loop is known as a count controlled loop, you should use it when you want to repeat a block of code for a set number of times.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="imagesvb/forloop1vb.png" alt="Forloop1" /></th>
+      <th><img src="imagesvb/forloop2vb.png" alt="Forloop2" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Code without a loop</td>
+      <td>Code using a loop</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>How the for loop works</strong></p>
+<ul>
+  <li>a <code class="highlighter-rouge">for</code> loop will repeat for a set number of times and it will repeat between two ranges. <code class="highlighter-rouge">for x = 0 to 4</code> will repeat between the bottom and the top value.</li>
+  <li><code class="highlighter-rouge">for x = 0 to 4</code> will repeat 5 times, 0,1,2,3 and 4.</li>
+  <li><code class="highlighter-rouge">x</code> is just a variable that is a counter and stores the number in the loop, this is useful if you need to use it in calculations.</li>
+</ul>
+
+<h2 id="example-program-1---name-repeater-program">Example Program 1 - Name Repeater Program</h2>
+<p>This program asks the user to enter their name and their age. It will then add their name to the list box for the number of times their age.</p>
+
+<p><strong>Interface</strong>
+<img src="imagesvb/forloop3vb.png" alt="Forloop3" /></p>
+
+<p><strong>Code when btnGo is clicked</strong></p>
+<pre><code class="language-vbnet">Dim name As String = txtName.Text
+Dim age As Integer = txtAge.Text
+For x = 0 To age - 1 Step 1
+    lstOutput.Items.Add("Your name is: " + name)
+Next
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/forloop4vb.png" alt="Forloop4" /></p>
+
+<h2 id="example-program-2---timestable-program">Example Program 2 - Timestable Program</h2>
+<p>This program will ask the user what timestable they want to learn, it will then calculate the timestables for that number. It makes use of the counter (x) in the loop to calculate the answer.</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/forloop5vb.png" alt="Forloop5" /></p>
+
+<p><strong>Code when btnCalculate is clicked</strong></p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">Dim</span> <span class="n">number</span> <span class="n">As</span> <span class="n">Integer</span> <span class="o">=</span> <span class="n">txtNumber</span><span class="o">.</span><span class="n">Text</span>
+<span class="n">Dim</span> <span class="n">total</span> <span class="n">As</span> <span class="n">Integer</span>
+<span class="s">'loop that will repeat 13 times (0-12)</span><span class="err">
+</span><span class="s">For i = 0 To 12 Step 1</span><span class="err">
+</span><span class="s">    '</span><span class="n">the</span> <span class="n">answer</span> <span class="n">uses</span> <span class="n">x</span> <span class="n">which</span> <span class="n">increases</span> <span class="n">each</span> <span class="n">time</span> <span class="n">to</span> <span class="n">work</span> <span class="n">out</span> <span class="n">the</span> <span class="n">answer</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">number</span> <span class="o">*</span> <span class="n">i</span>
+	<span class="s">'x is used to display what it is multiplying the number entered by and it is added to the list box</span><span class="err">
+</span><span class="s">    lstOutput.Items.Add(number.ToString &amp; " x " &amp; i.ToString &amp; " = " &amp; total.ToString)</span><span class="err">
+</span><span class="s">Next</span><span class="err">
+</span></code></pre>
+</div>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/forloop6vb.png" alt="Forloop6" /></p>
+
+<h2 id="example-program-3---total-calculator-program">Example Program 3 - Total Calculator Program</h2>
+<p>This program asks the user to enter a five digit number. It then uses sub-strings to add digits 1,3 and 5 together and subtract digits 2 and 4. This program combines using an <code class="highlighter-rouge">if</code> with a <code class="highlighter-rouge">for</code> loop.</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/forloop7vb.png" alt="Forloop7" /></p>
+
+<p><strong>Code when btnAdd is clicked</strong></p>
+<pre><code class="language-vbnet">Dim total As Integer = 0
+Dim number As String = txtNumber.Text
+'an array which splits the number variable into characters and stores separately in the array
+Dim numbers As Array = number.ToCharArray
+'loop to repeat five times
+For x = 0 To 4
+    'x is used to see how many digits have been checked
+	'if x is 0 this is the first time through the loop, therefore digit 1 is being checked, 2 is digit 3 and 4 is digit 5.
+    If x = 0 Or x = 2 Or x = 4 Then
+		'the number is retrieved from the variable number by using x to get the
+        'correct digit. As it is a character array, it needs to be converted to a
+        'string and then converted to an integer so calculations can be carried out
+        total = total + CInt(numbers(x).ToString)
+    Else
+        'if it is digit 2 or 4 then it will subtract the number from the total
+        total = total - CInt(numbers(x).ToString)
+    End If
+Next
+'the final total will be displayed in a message box, this is after the loop has finished
+MessageBox.Show("The final total is " &amp; total.ToString)
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/forloop8vb.png" alt="Forloop8" /></p>
+
+<p>The answer on this example is 15. This is because it will add the first, third and fifth digit to the total (5 + 6 + 9) which gives 20. It then subtracts digits 2 and 4 (3 + 2) from the total, therefore 20 - 5 to give 15.</p>
+
+<h2 id="example-4---finding-the-average-of-numbers-in-a-list">Example 4 - Finding the average of numbers in a list</h2>
+<p>This program has a list that contains test <code class="highlighter-rouge">scores</code>. The program will go through the list and add together all the numbers to get a total. It then works out the average of the test scores.</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/forloop9vb.png" alt="Forloop9" /></p>
+
+<p><strong>Code when btnFind is clicked</strong></p>
+<pre><code class="language-vbnet">'an array called scores, that contains 5 test scores
+Dim scores As Array = {10, 12, 7, 6, 10}
+'the size of the array if found by using .Length, it will return 5
+Dim size As Integer = scores.Length
+Dim total As Integer = 0
+'a loop that will repeat between 0 and the value of size - 1 (so it doesn't loop one too many times)
+For x = 0 To size - 1
+    'it will use x from the loop to add the correct element from the list to the total
+    total = total + scores(x)
+Next
+'the loop has now finished, the average is calculated by dividing the total by the size
+Dim average As Decimal = total / size
+MessageBox.Show("The average of the numbers is: " &amp; average.ToString)
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/forloop10vb.png" alt="Forloop10" /></p>
+
+<p>This program gives the average of 9 based on the values in the scores array. This is because 10 + 12 + 7 + 6 + 10 = 45. This is then divided by the size of the list (5) to give 9.</p>
+
+<h1 id="iteration---condition-controlled">Iteration - Condition Controlled</h1>
+
+<p>Iteration is the process of repeating a process over and over. Often in programming you need to repeat a block of code several times.</p>
+
+<h2 id="while-loops">WHILE Loops</h2>
+
+<p>A <code class="highlighter-rouge">while</code> loop is known as a condition controlled loop, you should use it when you do not know how many times the code needs to repeat as you can say repeat <code class="highlighter-rouge">while</code> a condition is <code class="highlighter-rouge">True</code>.</p>
+
+<pre><code class="language-vbnet">Dim userentry As String = "y"
+While userentry &lt;&gt; "n"
+    userentry = InputBox("Play again? y/n")
+End While
+MessageBox.Show("Game over")
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/whileloop1vb.png" alt="whileloop1" /></p>
+
+<p><strong>How the while loop works</strong></p>
+<ul>
+  <li>there is a condition after the word <code class="highlighter-rouge">while</code>, it works like an <code class="highlighter-rouge">if</code> condition. <code class="highlighter-rouge">while</code> the variable <code class="highlighter-rouge">userentry</code> is not equal to <code class="highlighter-rouge">n</code> the code inside the loop (that is indented) will repeat</li>
+  <li>when <code class="highlighter-rouge">n</code> is entered by the user, the loop will end and it will continue with the code after the loop. In this case it will display a message box saying “Game Over”.</li>
+</ul>
+
+<h2 id="example-program-1---guess-the-number">Example Program 1 - Guess the Number</h2>
+<p>This program asks the user to guess the number, it will keep asking them to guess the number until they guess it correctly. Once they have guessed it correctly it will tell them how many attempts it took.</p>
+
+<p><strong>Code when btnGuess is clicked</strong></p>
+<pre><code class="language-vbnet">Dim answer As Integer = 15
+Dim attempts As Integer = 0
+Dim userentry As String = ""
+'a loop that repeats while the users guess is not the same as the answer
+While answer.ToString &lt;&gt; userentry
+    userentry = InputBox("Enter a number between 1 and 20")
+    'each time through the loop 1 is added to the number of attempts
+    attempts = attempts + 1
+End While
+'after the loop it will say how many attempts it took
+MessageBox.Show("Well done you correctly guessed the number, it took you " &amp; attempts.ToString &amp; " attempts")
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/whileloop3vb.png" alt="whileloop3" /></p>
+
+<h2 id="example-program-2---adding-user-numbers-program">Example Program 2 - Adding User Numbers Program</h2>
+<p>This program asks the user to enter a number. It then asks them whether they want to enter another. If they do it will ask them another and add it to the previous number, it will keep doing this until they say they do not want to enter any more numbers. Finally it will output the total.</p>
+
+<p><strong>Code when btnAdd is clicked</strong></p>
+<pre><code class="language-vbnet">Dim total As Integer = 0
+Dim another As String = "Y"
+'the loop will repeat while the user types Y when asked if they want to enter another number
+While another = "Y"
+    #asks the user to enter a number
+    Dim number As Integer = InputBox("Enter a number")
+    'adds the number entered to the total    
+    total = total + number
+    'asks the user if they want to enter another number
+    another = InputBox("Do you want to enter another number? Y/N ")
+End While
+'after the loop ends it outputs the total
+MessageBox.Show("The total of your numbers was " &amp; total.ToString)
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/whileloop5vb.png" alt="whileloop5" /></p>
+
+<h1 id="file-reading">File Reading</h1>
+
+<p>Sometimes you will need to read data from a file to find information and then depending on what you find do something with it.</p>
+
+<p>The process of reading from a file is always the same. The only thing that changes is what file you are using and what you are looking for in that file.</p>
+
+<p>Below are the key steps to the process:</p>
+<ul>
+  <li>Open a connection to a file</li>
+  <li>Store input from the user to find out what you are looking for</li>
+  <li>Read through each line of the file</li>
+  <li>When you read a line split the information into a list (so you can check individual pieces of information)</li>
+  <li>Check if the piece of information entered by the user is in the line</li>
+  <li>If it is do whatever you need to do.</li>
+</ul>
+
+<h2 id="csv-files">CSV Files</h2>
+<p>When reading data from a file, the easiest file type to use is a CSV file, this stands for comma separated values.</p>
+
+<p>Consider the file below that contains a list of games for different consoles</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="imagesvb/reading1vb.png" alt="Reading1" /></th>
+      <th><img src="imagesvb/reading2vb.png" alt="Reading2" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CSV file as a text file</td>
+      <td>CSV file in Excel</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Each piece of data is separated by a comma. This means that when you split the information up you can say to the program split the information into the list every time you find a comma.</p>
+
+<p>This means you can then refer to elements of the list to extract single pieces of information. Imagine the array you have is called <code class="highlighter-rouge">games</code>, the second image above shows how you would reference the information. If you wanted the name of the game it would be <code class="highlighter-rouge">games(1)</code>, if you wanted to the rating it would be <code class="highlighter-rouge">games(3)</code></p>
+
+<h2 id="worked-example---file-reading---speeding-cars">Worked example - File Reading - Speeding Cars</h2>
+<p>Before creating a program to read data from a file you need to understand what data is in the file. In this example it will use a file called <code class="highlighter-rouge">cars.csv</code>, which is shown below:</p>
+
+<p><img src="imagesvb/reading3vb.png" alt="Reading3" /></p>
+
+<p>In this file there are two pieces of data, these are the car registration and the speed. When the data is split into a list, they can be referred to as element 0 for the registration and element 1 for the speed.</p>
+
+<p><strong>Step 1 - Creating the Interface</strong>
+Like any Visual Basic program the first thing you must do is create the interface. In this program the user will select a speed limit from a combo box and then it will output speeding cars to a list box. The interface could look something like this:</p>
+
+<p><img src="imagesvb/reading4vb.png" alt="Reading4" /></p>
+
+<p><strong>Step 2 - Creating a Connection to the file</strong></p>
+<pre><code class="language-vbnet">Imports System.IO
+</code></pre>
+<p>First you must import the input/output library. This code <strong>must</strong> go at the very top of your code <strong>above</strong> <code class="highlighter-rouge">Public Class</code></p>
+
+<pre><code class="language-vbnet">Dim filereader As New StreamReader("D:\cars.csv")
+</code></pre>
+<p>This code will create a connection to the file <code class="highlighter-rouge">cars.csv</code>. It can then be referred to as the variable name which is <code class="highlighter-rouge">filereader</code>. <strong>NOTE:</strong> You must put the full path of the file, not just the name.</p>
+
+<p><strong>Step 3 - Storing Input from the User</strong>
+In this program we need to find out the speed limit so we can compare it to the speed that the car is travelling to see if it is speeding, therefore the speed limit selected from the combo box needs to be stored.</p>
+<pre><code class="language-vbnet">Dim speedlimit As Integer = cmbSpeedLimit.Text
+</code></pre>
+<p>The code so far now looks like this:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">Dim</span> <span class="n">filereader</span> <span class="n">As</span> <span class="n">New</span> <span class="n">StreamReader</span><span class="p">(</span><span class="s">"D:</span><span class="err">\</span><span class="s">cars.csv"</span><span class="p">)</span>
+<span class="n">Dim</span> <span class="n">speedlimit</span> <span class="n">As</span> <span class="n">Integer</span> <span class="o">=</span> <span class="n">cmbSpeedLimit</span><span class="o">.</span><span class="n">Text</span>
+</code></pre>
+</div>
+
+<p><strong>Step 4 - Reading through the file</strong>
+Now each line of the file needs to be checked, you will need to use a loop to do this.</p>
+<pre><code class="language-vbnet">While filereader.EndOfStream = False
+</code></pre>
+<p>This will create a loop that will repeat while the end of stream (end of the file) of the <code class="highlighter-rouge">filereader</code> variable has not been reached.</p>
+
+<p>The code so far now looks like this:</p>
+<pre><code class="language-vbnet">Dim filereader As New StreamReader("D:\cars.csv")
+Dim speedlimit As Integer = cmbSpeedLimit.Text
+While filereader.EndOfStream = False
+</code></pre>
+
+<p><strong>Step 5 - Read a line from the file and split the data up</strong>
+Now we have a loop that will read each line in the file, we need to read one line at a time, and split the information up. We know it is a <code class="highlighter-rouge">csv</code> file and therefore each piece of data is separated by a comma. When it splits the line from the file it needs to store it in a list, the list below is called <code class="highlighter-rouge">details</code>.</p>
+<pre><code class="language-vbnet">details = filereader.ReadLine.Split(",")
+</code></pre>
+<p>The code so far now looks like this:</p>
+<pre><code class="language-vbnet">Dim filereader As New StreamReader("D:\cars.csv")
+Dim speedlimit As Integer = cmbSpeedLimit.Text
+Dim details As Array
+While filereader.EndOfStream = False
+    details = filereader.ReadLine.Split(",")
+End While
+</code></pre>
+<p><strong>NOTE:</strong> Don’t forget to declare the array before you use the details array in the loop</p>
+
+<p><strong>Step 6 - Checking the Data</strong>
+The next stage is to check the data that we have read from the file. In this case we want to see if the speed is greater than (&gt;) the speed limit. The speed is stored in element 1 of the details array.</p>
+<pre><code class="language-vbnet">If details(1) &gt; speedlimit Then
+</code></pre>
+<p>The code so far now looks like this:</p>
+<pre><code class="language-vbnet">Dim filereader As New StreamReader("D:\cars.csv")
+Dim speedlimit As Integer = cmbSpeedLimit.Text
+Dim details As Array
+While filereader.EndOfStream = False
+    details = filereader.ReadLine.Split(",")
+    If details(1) &gt; speedlimit Then
+End While
+</code></pre>
+
+<p><strong>Step 7 - If the condition is met</strong>
+If the condition is met and in this case the car is speeding then you can type the code you want to run like you would for a normal <code class="highlighter-rouge">if</code> statement. In this example we want to add the information of the speeding cars to the list box</p>
+<pre><code class="language-vbnet">lstOutput.Items.Add(details(0) &amp; " " &amp; details(1))
+</code></pre>
+<p>The final code looks like this:</p>
+<pre><code class="language-vbnet">Dim filereader As New StreamReader("D:\cars.csv")
+Dim speedlimit As Integer = cmbSpeedLimit.Text
+Dim details As Array
+While filereader.EndOfStream = False
+    details = filereader.ReadLine.Split(",")
+    If details(1) &gt; speedlimit Then
+        lstOutput.Items.Add(details(0) &amp; " " &amp; details(1))
+    End If
+End While
+</code></pre>
+<p><code class="highlighter-rouge">details(0)</code> is the car registration plate and <code class="highlighter-rouge">details(1)</code> is the speed travelling from the file.</p>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/reading5vb.png" alt="Reading5" /></p>
+
+<h2 id="dealing-with-no-matches-found-in-the-file">Dealing with no matches found in the file</h2>
+<p>Sometimes the information you are looking for in a file might not be there, you will need to let the user know this.</p>
+
+<p>At the moment when you enter a speed limit where there are no cars speeding, the program looks like nothing happens:</p>
+
+<p><img src="imagesvb/reading6vb.png" alt="Reading6" /></p>
+
+<p>What it should do is display a message something like <code class="highlighter-rouge">There are no speeding cars</code>, as shown below:</p>
+
+<p><img src="imagesvb/reading7vb.png" alt="Reading7" /></p>
+
+<p><strong>How to do this</strong></p>
+<ol>
+  <li>Create a boolean variable at the start of the program called <code class="highlighter-rouge">found</code> and set it to <code class="highlighter-rouge">False</code>. This is because at the start of the program no matches have been found.
+    <pre><code class="language-vbnet">Dim found As Boolean = False
+</code></pre>
+  </li>
+  <li>When a match has been found (inside the IF statement) add a line of code to change that variable to <code class="highlighter-rouge">True</code>.
+    <pre><code class="language-vbnet">If details(1) &gt; speedlimit Then
+ found = True 'new line of code
+ lstOutput.Items.Add(details(0) &amp; " " &amp; details(1))
+End If
+</code></pre>
+  </li>
+  <li>After the <code class="highlighter-rouge">while</code> loop create an <code class="highlighter-rouge">if</code> that checks if <code class="highlighter-rouge">found=False</code>. If found is still False and it has been through the loop and read the whole file and it is still False this means that the information you have been looking for in the file has not been found.
+    <pre><code class="language-vbnet">If found=False Then
+</code></pre>
+  </li>
+  <li>Finally code what you want to happen if there are no matches inside the <code class="highlighter-rouge">if</code>.
+    <pre><code class="language-vbnet">If found=False Then
+ MessageBox.Show("There are no speeding cars")
+End If
+</code></pre>
+  </li>
+</ol>
+
+<p>The final code now looks like this:</p>
+<pre><code class="language-vbnet">Dim filereader As New StreamReader("D:\cars.csv")
+Dim speedlimit As Integer = cmbSpeedLimit.Text
+Dim details As Array
+Dim found As Boolean = False
+While filereader.EndOfStream = False
+    details = filereader.ReadLine.Split(",")
+    If details(1) &gt; speedlimit Then
+        found = True
+        lstOutput.Items.Add(details(0) + " " + details(1))
+    End If
+End While
+If found = False Then
+    MessageBox.Show("There are no speeding cars")
+End If
+</code></pre>
+
+<p><strong>NOTE:</strong> You must use a variable to do this rather than adding an <code class="highlighter-rouge">Else</code> to the <code class="highlighter-rouge">If</code> as otherwise it could display the message multiple times. This is because everytime it reads a line from the file and doesn’t find the match it would display the message box, rather than just doing it once.</p>
+
+<h2 id="example-program-1---timetable-program">Example Program 1 - Timetable Program</h2>
+<p>This program asks the user to enter the day you want to view the timetable for. It will then look in the file and find the lessons for that day or say that it cannot be found.</p>
+
+<p>The CSV file looks like this:</p>
+
+<p><img src="imagesvb/reading8vb.png" alt="Reading8" /></p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/reading9vb.png" alt="Reading8" /></p>
+
+<p><strong>Code when btnLessons is clicked</strong></p>
+<pre><code class="language-vbnet">Dim day As String = cmbDay.Text 'stores the input from the user
+Dim fileReader As New StreamReader("D:\timetable.csv") 'opens the file
+Dim lessons As Array 'declares an array to store a line of information from the file
+Dim found As Boolean = False 'stores whether the day is found in the file, set to False at the beginning
+While fileReader.EndOfStream = False 'loops for the number of lines in the file
+    lessons = fileReader.ReadLine.Split(",") 'splits the line into the lessons array
+    If lessons(0) = day Then 'checks if the day entered is in element 0 of the list
+        'if it is it prints the timetable referring to the different elements of the array
+        MessageBox.Show(day + vbNewLine + "Period 1 - " + lessons(1) + vbNewLine + "Period 2 - " +
+        lessons(2) + vbNewLine + "Period 3 - " + lessons(3) + vbNewLine +
+        "Period 4 - " + lessons(4) + vbNewLine + "Period 5 - " + lessons(5))
+        'sets found to True as a match is found
+        found = True
+    End If
+End While
+'after the loops checks if found if still False
+If found = False Then
+    'displays a message if it is
+    MessageBox.Show("Day not found")
+End If
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/reading10vb.png" alt="Reading10" /></p>
+
+<h2 id="example-program-2---stock-checker">Example Program 2 - Stock Checker</h2>
+<p>This program asks the user to enter the games console they are looking for. It will then look through the file and calculate the total value of each game in stock (the number there are multiplied by the price). If there are no games for that console it will say <code class="highlighter-rouge">Console not found</code>.</p>
+
+<p>The CSV file looks like this:</p>
+
+<p><img src="imagesvb/reading11vb.png" alt="Reading11" /></p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/reading12vb.png" alt="Reading12" /></p>
+
+<p><strong>Code when btnCheck is clicked</strong></p>
+<pre><code class="language-vbnet">Dim console As String = cmbselectconsole.Text 'stores the console choice from the user
+Dim filereader As New StreamReader("D:\games.csv") 'opens the file
+Dim details As Array 'declares an array to store a line of information from the file
+Dim gamevalue As Integer = 0 'stores the total value of a game
+Dim found As Boolean = False 'stores whether the console is found in the file, set to False at the beginning
+Dim totalvalue As Integer = 0 'stores the total value of all games
+While filereader.EndOfStream = False 'loops for the number of lines in the file
+    details = filereader.ReadLine().Split(",") 'splits the line into the details list
+    'variables that store different pieces of information from the list to make them easier to reference
+    Dim game As String = details(1)
+    Dim price As Decimal = details(2)
+    Dim rating As String = details(3)
+    Dim noinstock As Integer = details(4)
+    If details(0) = console Then 'checks if the console entered is in element 0 of the array
+        gamevalue = price * noinstock 'calculates the total stock value of a game
+        totalvalue = totalcost + gamecost 'calculates a running total of the entire stock value
+        'adds the game information to the list view box
+        lstStock.Items.Add(New ListViewItem({game, FormatCurrency(price), rating, noinstock, FormatCurrency(gamevalue)}))
+        'sets found to True as a match is found
+        found = True
+    End If
+End While
+'add the totalvalue to the text box on the interface
+txtTotalValue.Text = FormatCurrency(totalvalue)
+'after the loops checks if found if still False
+If found = False Then
+    'displays a message if it is
+    MessageBox.Show("Console not found.")
+End If
+</code></pre>
+
+<p><strong>Code when Form loads</strong></p>
+<pre><code class="language-vbnet">lstStock.Items.Clear() 'clears the list view box of any previous data.
+'adds column headings to the list view box ready for data to be added
+lstStock.Columns.Add("Game", 100, HorizontalAlignment.Center)
+lstStock.Columns.Add("Price", 100, HorizontalAlignment.Center)
+lstStock.Columns.Add("Rating", 100, HorizontalAlignment.Center)
+lstStock.Columns.Add("No. in Stock", 100, HorizontalAlignment.Center)
+lstStock.Columns.Add("Total Cost", 100, HorizontalAlignment.Center)
+</code></pre>
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/reading13vb.png" alt="Reading13" /></p>
+
+<h1 id="file-writing">File Writing</h1>
+
+<p>Sometimes you will need to write data to a file.</p>
+
+<p>The process of writing to a file is always the same. The only thing that changes is what file you are writing to and what you write to the file.</p>
+
+<p>Below are the key steps to the process:</p>
+<ul>
+  <li>Open a connection to a file in append mode.</li>
+  <li>Write the information you want to a file</li>
+  <li>Close the connection to the file</li>
+</ul>
+
+<h2 id="write-modes">Write modes</h2>
+<p>When you read from a file you would use the cost <code class="highlighter-rouge">Dim filereader As New StreamReader("filename.csv")</code>. When you want to write to a file it is very similar, but instead of <code class="highlighter-rouge">StreamReader</code> it is <code class="highlighter-rouge">StreamWriter</code>. Therefore the code to create a connection to write to the file is <code class="highlighter-rouge">Dim filewriter As New StreamWriter("filename.csv")</code>. If you do this it will create a connection to <strong>overwrite</strong> what is already in the file which you do not always want. Sometimes you just want to add information to the file, this is known as appending. To append to a file in Visual Basic you open a connection but add <code class="highlighter-rouge">,True</code> after the file name like so:</p>
+<pre><code class="language-vbnet">Dim filewriter As New StreamWriter("filename.csv",True)
+</code></pre>
+
+<p><strong>NOTE:</strong> you can call the variable <code class="highlighter-rouge">filewriter</code> whatever you want.</p>
+
+<h2 id="worked-example---file-writing---christmas-list">Worked example - File Writing - Christmas List</h2>
+<p>Imagine a program that when run asks the user to enter a gift they want for Christmas, how much it costs and the priority of how much they want it.</p>
+
+<p><strong>Step 1 - Creating the Interface</strong>
+The interface for this program will need them to be able to enter the gift name, the cost and their priority, it would look like this:</p>
+
+<p><img src="imagesvb/writing1vb.png" alt="Writing1" /></p>
+
+<p><strong>Step 1 - Getting the information to write to the file</strong></p>
+
+<pre><code class="language-vbnet">Dim gift As String = txtGift.Text
+Dim cost As Decimal = txtCost.Text
+Dim priority As Integer = cmbPriority.Text
+</code></pre>
+
+<p>Before you can write to the file you need to store the information entered by the user that you want to add to the file.</p>
+
+<p><strong>Step 2 - Creating a Connection to the file</strong></p>
+<pre><code class="language-vbnet">Dim filewriter As New StreamWriter("D:\filename.csv", True)
+</code></pre>
+<p>This code will create a connection to the file <code class="highlighter-rouge">filename.csv</code> in <code class="highlighter-rouge">append</code> mode, the <code class="highlighter-rouge">,True</code> after the file name is what puts the write connection in append mode. It can then be referred to as the variable name which is <code class="highlighter-rouge">filewriter</code></p>
+
+<p><strong>Step 3 - Write the Information to the File</strong>
+As you are writing to a <code class="highlighter-rouge">csv</code> file you need to separate each piece of data that you want to add with a comma.</p>
+
+<pre><code class="language-vbnet">filewriter.WriteLine(gift &amp; "," &amp; cost.ToString &amp; "," &amp; priority.ToString)
+</code></pre>
+
+<p><strong>NOTE:</strong> the any variables that are not a string data type need to be converted by using <code class="highlighter-rouge">.ToString</code>.</p>
+
+<p><strong>Step 4 - Closing the Connection</strong>
+Once you have written to the file you need to close the connection to the file. This means it can be used by other parts of the program if needed.</p>
+
+<pre><code class="language-vbnet">filewriter.close()
+</code></pre>
+
+<p>The final code when btnAdd is clicked:</p>
+<pre><code class="language-vbnet">Dim gift As String = txtGift.Text
+Dim cost As Decimal = txtCost.Text
+Dim priority As Integer = cmbPriority.Text
+Dim filewriter As New StreamWriter("D:\christmaslist.csv", True)
+filewriter.WriteLine(gift &amp; "," &amp; cost.ToString &amp; "," &amp; priority.ToString)
+filewriter.Close()
+MessageBox.Show("Gift added to File")
+</code></pre>
+
+<p>The finished program looks like this when btnAdd is clicked:</p>
+
+<p><img src="imagesvb/writing2vb.png" alt="Writing2" /></p>
+
+<p>The file created looks like this:</p>
+
+<p><img src="imagesvb/writing3vb.png" alt="Writing3" /></p>
+
+<h2 id="example-program-1---deciding-whether-to-write-to-a-file">Example Program 1 - Deciding whether to write to a file</h2>
+<p>Sometimes before you add information to a file, you might need to check if it meets certain requirements. This will require building selection (IF) into your code.</p>
+
+<p>At the moment the program above will always write the information entered to a file. Consider this new requirement:</p>
+
+<p><code class="highlighter-rouge">Santa is running out of money, it should only write to the file gifts that cost less than £150, otherwise say they cost too much</code></p>
+
+<p><strong>How to do this</strong></p>
+<ol>
+  <li>After the information has been entered create an <code class="highlighter-rouge">if</code> that checks if the <code class="highlighter-rouge">cost</code> is less than 150.</li>
+</ol>
+
+<pre><code class="language-vbnet">Dim gift As String = txtGift.Text
+Dim cost As Decimal = txtCost.Text
+Dim priority As Integer = cmbPriority.Text
+If cost &lt; 150 Then
+</code></pre>
+
+<ol>
+  <li><code class="highlighter-rouge">if</code> the cost is less than £150, then the lines of code that write to a file should be run.</li>
+</ol>
+
+<pre><code class="language-vbnet">If cost &lt; 150 Then
+    Dim filewriter As New StreamWriter("D:\christmaslist.csv", True)
+    filewriter.WriteLine(gift &amp; "," &amp; cost.ToString &amp; "," &amp; priority.ToString)
+    filewriter.Close()
+    MessageBox.Show("Gift added to File")
+End If
+</code></pre>
+
+<ol>
+  <li><code class="highlighter-rouge">if</code> the cost is not less than £150, add an <code class="highlighter-rouge">else</code> and add code to say that the gift is too expensive.</li>
+</ol>
+
+<pre><code class="language-vbnet">Else
+    MessageBox.Show("That gift is too expensive, Santa doesn't have enough money")
+</code></pre>
+
+<p>The final code now looks like this:</p>
+<pre><code class="language-vbnet">Dim gift As String = txtGift.Text
+Dim cost As Decimal = txtCost.Text
+Dim priority As Integer = cmbPriority.Text
+If cost &lt; 150 Then
+    Dim filewriter As New StreamWriter("D:\christmaslist.csv", True)
+    filewriter.WriteLine(gift &amp; "," &amp; cost.ToString &amp; "," &amp; priority.ToString)
+    filewriter.Close()
+    MessageBox.Show("Gift added to File")
+Else
+    MessageBox.Show("That gift is too expensive, Santa doesn't have enough money")
+End If
+</code></pre>
+
+<h2 id="example-program-2---checking-if-data-exists-in-a-file-before-adding-new-data">Example Program 2 - Checking if data exists in a file before adding new data</h2>
+<p>Sometimes you will need to create a program that reads through a file to see if certain information exists. If it doesn’t then write it to a file.</p>
+
+<p>This program asks the user to enter their names, email address and the number of years they have been teaching. It then looks in the file to see if the email address already exists. If it doesn’t it will write the information entered to a file, if it does it will say that person already exists.</p>
+
+<p>The CSV file looks like this:</p>
+
+<p><img src="imagesvb/writing4vb.png" alt="Writing4" /></p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/writing5vb.png" alt="Writing5" /></p>
+
+<p><strong>Code when btnAdd is clicked</strong></p>
+<pre><code class="language-vbnet">'variables to store the four pieces of information entered by the user
+Dim firstname As String = txtFirstName.Text
+Dim surname As String = txtSurname.Text
+Dim email As String = txtEmail.Text
+Dim years As Integer = txtYears.Text
+Dim filereader As New StreamReader("D:/staff.csv") 'opens the file in read mode
+Dim details As Array 'declares an array to store a line of information from the file
+Dim found As Boolean = False 'sets whether the user is found to False
+While filereader.EndOfStream = False 'loops for the number of lines in the file
+    details = filereader.ReadLine.Split(",") 'splits the line into the array called details
+    If details(2) = email Then 'checks if the email entered is in the array
+        found = True 'if it is changes found to True
+    End If
+End While
+filereader.Close() 'closes the file
+If found = True Then 'after the loop checks if the user is found
+    MessageBox.Show("Staff member is already in the file") 'displays on screen
+Else
+    Dim filewriter As New StreamWriter("D:\staff.csv", True) 'open the file in append mode
+    filewriter.WriteLine(firstname &amp; "," &amp; surname &amp; "," &amp; email &amp; "," &amp; years.ToString) 'write the new information to the file
+    filewriter.Close() 'closes the file
+    MessageBox.Show("Staff member added to file")
+End If
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="imagesvb/writing6vb.png" alt="Writing6" /></th>
+      <th><img src="imagesvb/writing4vb.png" alt="Writing4" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Member of staff exists</td>
+      <td>File after program has run</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="imagesvb/writing7vb.png" alt="Writing7" /></th>
+      <th><img src="imagesvb/writing8vb.png" alt="Writing8" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Member of staff doesn’t exist</td>
+      <td>File after program has run</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example-program-3---reading-data-from-one-file-and-writing-to-a-separate-file">Example Program 3 - Reading Data from one file and writing to a separate file</h2>
+<p>This program looks through a file that contains a list of students and the scores that they have got in four tests. When run it should calculate the average score for each student. If it is over 50 it should write their name and their average score to a new file, if not it should do nothing. The program should also count how many people have averaged above 50.</p>
+
+<p>The CSV file looks like this:</p>
+
+<p><img src="imagesvb/writing9vb.png" alt="Writing9" /></p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/writing10vb.png" alt="Writing10" /></p>
+
+<p><strong>Code when btnCalculate is clicked</strong></p>
+<pre><code class="language-vbnet">Dim filereader As New StreamReader("D:\testscores.csv") 'opens the file in read mode
+Dim details As Array
+Dim total As Integer = 0
+Dim average As Decimal = 0
+Dim studentsover50 As Integer = 0 'variable to store how many students have averaged over 50
+While filereader.EndOfStream = False 'reads each line in the file
+    details = filereader.ReadLine.Split(",") splits the line into the array called details
+    total = CInt(details(3)) + CInt(details(4)) + CInt(details(5)) + CInt(details(6)) 'adds up the four test scores
+    average = total / 4 'calculates the average of the four test scores
+    If average &gt; 50 Then 'checks if the average is more than 50
+        'adds the student name, class and average to the list view box
+        lstStudents.Items.Add(New ListViewItem({details(0) &amp; " " &amp; details(1), details(2), average}))
+        'adds 1 to the number of students averaging over 50        
+        studentsover50 = studentsover50 + 1
+        'opens the file averageover50.csv in append mode
+        Dim filewriter As New StreamWriter("D:/aboveaverage.csv",True)
+        'writes the same information that has been added to the listview box to file
+        filewriter.WriteLine(details(0) &amp; " " &amp; details(1) &amp; "," &amp; details(2) &amp; "," &amp; average.ToString)
+        filewriter.Close() 'closes the file
+    End If
+End While
+If studentsover50 = 0 Then 'after the loop checks if the studentsover50 variable is 0
+    MessageBox.Show("There were no students that averaged over 50") 'if it is then say no students averaged over 50
+Else
+    MessageBox.Show("The number of students averaging over 50 was " &amp; studentsover50.ToString) 'if not says how many averaged over 50.
+End If
+</code></pre>
+
+<p><strong>Code when Form loads</strong></p>
+<pre><code class="language-vbnet">lstStudents.Items.Clear()
+lstStudents.Columns.Add("Name", 150, HorizontalAlignment.Center)
+lstStudents.Columns.Add("Class", 75, HorizontalAlignment.Center)
+lstStudents.Columns.Add("Average", 75, HorizontalAlignment.Center)
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="imagesvb/writing11vb.png" alt="Writing11" /></th>
+      <th><img src="imagesvb/writing12vb.png" alt="Writing12" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Visual Basic</td>
+      <td>averageover50.csv file</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="file-updating">File Updating</h1>
+
+<p>Unfortunately, when you want to update information in a file when programming you
+cannot simply find the information and say what you want to change, you have to recreate the whole file changing the single piece of information you want to update, these are the steps you must go through:</p>
+
+<ol>
+  <li>Read through each line of the <strong>original file</strong> that contains the information you want to update.</li>
+  <li>If the line of the file has the information you want to update, then you can change the information, you then write this information to an <strong>updated file</strong></li>
+  <li>If the line of the file doesn’t have the information you want to update, then you write this information (unchanged) to the <strong>updated file</strong></li>
+  <li>Once the entire <strong>original file</strong> has been checked, the <strong>updated file</strong> should have the same number of lines in, but with the updated information. Then you must delete the <strong>original file</strong> and rename the <strong>updated file</strong> to the name of the <strong>original file</strong>.</li>
+</ol>
+
+<p><strong>NOTE:</strong> There are no new programming skills here, however you will need to combine the skills for reading and writing to a file together and program it in a logical order.</p>
+
+<h2 id="worked-example---file-updating---staff-details">Worked example - File Updating - Staff Details</h2>
+<p>Imagine a program that has a file that contains information of staff working in a school. The program when run should ask the user to enter an email address to find the staff details. When it finds a match it should ask for the new information and then update the file. If it doesn’t find a match it should say that the email address is not in the file.</p>
+
+<p>The CSV file looks like this:</p>
+
+<p><img src="imagesvb/updating1vb.png" alt="Updating1" /></p>
+
+<p><strong>Program Summary</strong>
+A summary of how the program should work:</p>
+<ul>
+  <li>Read a line from the file and compare the email address</li>
+  <li>If it <strong>is a match</strong> ask the user to enter the <strong>new information</strong> and then write the new information to the <strong>update file</strong>.</li>
+  <li>If it <strong>isn’t a match</strong> write the information that has been read into the list to the <strong>update file unchanged</strong>.</li>
+  <li>After every line in the whole file has been checked, <strong>delete the original file</strong>, <strong>rename</strong> the <strong>updated file</strong> to the name of the <strong>original file</strong>.</li>
+</ul>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/updating2vb.png" alt="Updating2" /></p>
+
+<p>Consider this code:</p>
+
+<pre><code class="language-vbnet">Dim firstname As String = txtFirstName.Text
+Dim surname As String = txtSurname.Text
+Dim email As String = txtEmail.Text
+Dim years As Integer = txtYears.Text
+Dim filereader As New StreamReader("D:\staff.csv")
+Dim details As Array
+Dim found As Boolean = False
+While filereader.EndOfStream = False
+    details = filereader.ReadLine.Split(",")
+    If details(2) = email Then
+        found = True
+End While
+If found = True Then
+    MessageBox.Show("Details Updated")
+Else
+    MessageBox.Show("That staff member's email cannot be found in the file, no changes made")
+End If
+</code></pre>
+
+<p>So far this program will ask the user to enter an email address. It will then open the staff file and check each line in the file for that email address. If it finds it then it will ask the user to enter the new information, but not do anything with it.</p>
+
+<p>After the loop has finished it will check to see if the <code class="highlighter-rouge">found</code> variable is <code class="highlighter-rouge">True</code> and if it is say details updated and if not say the staff member cannot be found.</p>
+
+<p><strong>NOTE:</strong> it doesn’t actually update the details at the moment.</p>
+
+<p>The code once it updates the file, this happens when <strong>btnUpdate</strong> is clicked:</p>
+
+<pre><code class="language-vbnet">Dim firstname As String = txtFirstName.Text
+Dim surname As String = txtSurname.Text
+Dim email As String = txtEmail.Text
+Dim years As Integer = txtYears.Text
+Dim filereader As New StreamReader("D:\staff.csv")
+Dim details As Array
+Dim found As Boolean = False
+While filereader.EndOfStream = False
+    details = filereader.ReadLine.Split(",")
+    Dim filewriter As New StreamWriter("D:\staffupdated.csv", True) 'new line 1
+    If details(2) = email Then
+        found = True
+        filewriter.WriteLine(firstname &amp; "," &amp; surname &amp; "," &amp; email &amp; "," &amp; years.ToString) 'new line 2
+    Else 'new line 3
+        filewriter.WriteLine(details(0) + "," + details(1) + "," + details(2) + "," + details(3)) 'new line 4
+    End If
+    filewriter.Close() 'new line 5
+End While
+filereader.Close() 'new line 6
+My.Computer.FileSystem.DeleteFile("D:\staff.csv") 'new line 7
+My.Computer.FileSystem.RenameFile("D:\staffupdated.csv", "staff.csv") 'new line 8
+If found = True Then
+    MessageBox.Show("Details Updated")
+Else
+    MessageBox.Show("That staff member's email cannot be found in the file, no changes made")
+End If
+</code></pre>
+
+<p><strong>What the new code does</strong></p>
+<ul>
+  <li><strong>New Line 1</strong> - opens a connection to a new temporary file called staffupdated.csv in append mode. This will be the new file with the updated information in.</li>
+  <li><strong>New Line 2</strong> - if the email address is found, it will write to the file all the new updated information from the form.</li>
+  <li><strong>New Line 3</strong> - an <code class="highlighter-rouge">else</code> is added so that if a line of the file has been read and it isn’t a match it must write the information unchanged to the temporary file.</li>
+  <li><strong>New Line 4</strong> - it will write the information that has been read into the list to the temporary file unchanged.</li>
+  <li><strong>New Line 5</strong> - closes the connection to the file you are writing to. This should be done after the <code class="highlighter-rouge">if</code> but inside the <code class="highlighter-rouge">while</code> loop.</li>
+  <li><strong>New Line 6</strong> - closes the connection to the file you are reading from. This should be done after the <code class="highlighter-rouge">while</code> loop.</li>
+  <li><strong>New Line 7</strong> - this will remove the original file, in this case <code class="highlighter-rouge">staff.csv</code></li>
+  <li><strong>New Line 8</strong> - this will rename the temporary file <code class="highlighter-rouge">staffupdated.csv</code> to <code class="highlighter-rouge">staff.csv</code> which will mean the updated information now appears in the original file.</li>
+</ul>
+
+<p>When the program is run and the staff member exists in the file:</p>
+
+<p><img src="imagesvb/updating3vb.png" alt="Updating3" /></p>
+
+<p>How the CSV file changes:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="imagesvb/updating4vb.png" alt="Updating4" /></th>
+      <th>Before the update</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="imagesvb/updating5vb.png" alt="Updating5" /></td>
+      <td>After the update</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>When the program is run and the staff member doesn’t exist in the file:</p>
+
+<p><img src="imagesvb/updating6vb.png" alt="Updating6" /></p>
+
+<h2 id="example-program-1---updating-a-file---zoo-animals">Example Program 1 - Updating a File - Zoo Animals</h2>
+<p>This program looks through a file that contains a list of animals and how many of them there are in the zoo. When run it should ask the user the animal that they are looking for and if it finds it then ask for the new number of that animals at the zoo and update the file.</p>
+
+<p>The CSV file looks like this:</p>
+
+<p><img src="imagesvb/updating7vb.png" alt="Updating7" /></p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/updating8vb.png" alt="Updating8" /></p>
+
+<p><strong>Code when btnUpdate is clicked</strong></p>
+<pre><code class="language-vbnet">'two variables to store the inputs from the user interface
+Dim animal As String = txtAnimal.Text
+Dim number As Integer = txtNumber.Text
+Dim filereader As New StreamReader("D:/zooanimals.csv") 'opens the file in read mode
+Dim found As Boolean = False 'sets whether the animal is found to False
+Dim details As Array 'declares an array that will store a line of information from the file
+While filereader.EndOfStream = False 'reads each line in the file
+    details = filereader.ReadLine.Split(",") 'splits the line into the list called details
+    Dim filewriter As New StreamWriter("D:/zooanimalsupdated.csv", True) 'opens the file zooanimalsupdated.csv in append mode
+    If details(0) = animal Then 'checks if the animal is found in the array
+        found = True 'if it is changes found to True
+        filewriter.WriteLine(details(0) + "," + txtNumber.Text) 'writes the animal and the new number to the temp file
+    Else
+         filewriter.WriteLine(details(0) + "," + details(1)) 'if that line doesn't contain the animal write the details from the list to the temp file unchanged.
+    End If
+    filewriter.Close() 'closes the file that is being written to
+End While
+filereader.Close() 'closes the file that is being read
+My.Computer.FileSystem.DeleteFile("D:\zooanimals.csv") 'deletes the original file
+My.Computer.FileSystem.RenameFile("D:\zooanimalsupdated.csv", "zooanimals.csv") 'renames the temporary file to the original file name
+If found = True Then 'after the loop checks if the animal is found
+    MessageBox.Show("Number of " + animal + " at the Zoo has been updated") 'if the animal was found say details updated
+Else
+    MessageBox.Show("That animal cannot be found in the file, no changes made") 'if the animal wasn't found say it cannot be found
+End If
+</code></pre>
+
+<p>The program when run with an animal in the file:</p>
+
+<p><img src="imagesvb/updating9vb.png" alt="Updating9" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="imagesvb/updating10vb.png" alt="Updating10" /></th>
+      <th><img src="imagesvb/updating11vb.png" alt="Updating11" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Before Update</td>
+      <td>After Update</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The program when run with an animal not in the file:</p>
+
+<p><img src="imagesvb/updating12vb.png" alt="Updating12" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="imagesvb/updating10vb.png" alt="Updating10" /></th>
+      <th><img src="imagesvb/updating10vb.png" alt="Updating10" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Before Update</td>
+      <td>After Update</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="arraysarraylists">Arrays/ArrayLists</h1>
+
+<h2 id="what-is-an-array-or-arraylist">What is an Array or ArrayList?</h2>
+<p>An array is a variable that can store multiple pieces of data under a single name. An array list can do exactly the same, so what is the difference?</p>
+<ul>
+  <li><strong>Array</strong> – an array is a set size that cannot change when the program is running.</li>
+  <li><strong>ArrayList</strong> – an ArrayList is dynamic and the size of it can change when the programming is running as there are different operations that can be performed.</li>
+</ul>
+
+<p>An array in Visual Basic is created in the following way:</p>
+<pre><code class="language-vbnet">Dim sentence As Array = {"The","quick","grey","fox","jumps"}
+</code></pre>
+<p>This example creates an array called sentence that has 5 elements to it.</p>
+
+<p>If you wanted to display the word <code class="highlighter-rouge">grey</code> in a message box you would type:</p>
+<pre><code class="language-vbnet">MessageBox.Show(sentence(2))
+</code></pre>
+<p><strong>NOTE:</strong> although <code class="highlighter-rouge">grey</code> is the third element in the list it is retrieved by saying <code class="highlighter-rouge">sentence(2)</code>, this is because the elements start at 0.</p>
+
+<p>If you wanted to output the entire contents of the array, you could use a list box and use the following code:</p>
+<pre><code class="language-vbnet">Dim sentence As Array = {"The","quick","grey","fox","jumps"}
+lstOutput.Items.Add(sentence(0))
+lstOutput.Items.Add(sentence(1))
+lstOutput.Items.Add(sentence(2))
+lstOutput.Items.Add(sentence(3))
+lstOutput.Items.Add(sentence(4))
+</code></pre>
+<p>You could also use a loop to do the same thing:</p>
+<pre><code class="language-vbnet">Dim sentence As Array = {"The","quick","grey","fox","jumps"}
+For x = 0 to sentence.length-1
+    lstOutput.Items.Add(sentence(x))
+Next
+</code></pre>
+
+<h2 id="example-program-1---finding-products-from-a-list">Example program 1 - Finding Products from a List</h2>
+<p>The code for the program below asks the user to enter a product code. It will then look for it in the array. If it finds it it will display the name and price of the product. If it isn’t found it will say <code class="highlighter-rouge">Product not found</code>.</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/arrays1vb.png" alt="Arrays1" /></p>
+
+<p><strong>Code when btnFind is clicked</strong></p>
+<pre><code class="language-vbnet">'this is a list that contains product information
+Dim product As Array = {"1262", "Cornflakes", "£1.40", "8743", "Weetabix", "£1.20", "9512", "Rice Krispies", "£1.32"}
+Dim product_code As String = txtProductCode.Text 'stores the product code the user has entered
+Dim found As Boolean = False 'stores whether the product has been found
+For x = 0 To product.Length - 1 'a loop that will repeat for the length of the list
+    If product(x) = product_code Then 'checks if the product code entered matches the current element of the list being checked
+		'displays the product code, name and cost
+        MessageBox.Show("Product Code: " &amp; product(x) &amp; vbNewLine &amp; "Product Name: " &amp; product(x + 1) &amp; vbNewLine &amp; "Price: " &amp; product(x + 2))
+		'sets found to true as the product is found
+        found = True
+    End If
+Next
+'after the loop checks if the product was not found
+If found = False Then
+	'if it wasn't found it says product not found
+    MessageBox.Show("Product not found")
+End If
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/arrays2vb.png" alt="Arrays2" /></p>
+
+<h2 id="example-program-2---addingremove-from-a-list">Example program 2 - Adding/Remove from a list</h2>
+<p>This program asks the user if they want to add or remove items from an array list. An <code class="highlighter-rouge">ArrayList</code> is used here as the size of the array can change depending on whether the user wants to add/remove items from it. When using an <code class="highlighter-rouge">ArrayList</code> it must start empty and then populate items using <code class="highlighter-rouge">arraylistname.Add()</code>. This program will add three items to the ArrayList at the start and them whether they want to add/remove from the ArrayList. It will then output the contents of the new ArrayList.</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/arrays3vb.png" alt="Arrays3" /></p>
+
+<p><strong>Code when btnRun is clicked</strong></p>
+<pre><code class="language-vbnet">lstOutput.Items.Clear() 'clear the list box
+Dim inventory As New ArrayList 'create an ArrayList
+'adds three pieces of data to the ArrayList
+inventory.Add("torch")
+inventory.Add("gold coin")
+inventory.Add("key")
+lstOutput.Items.Add("Original Inventory:") 'adds a title to the list box
+'a loop that repeats for the size of the ArrayList
+For x = 0 To inventory.Count - 1
+    'adds each item to the list box
+    lstOutput.Items.Add(inventory(x))
+Next
+Dim item As String
+'asks the user what would they like to do
+Dim answer As String = InputBox("What would you like do to?" &amp; vbNewLine &amp; "1. Add an Item" &amp; vbNewLine &amp; "2. Remove an Item")
+'if the first option is selected
+If answer = "1" Then
+    'ask the user to input the item to add
+    item = InputBox("What item would you like to add to the inventory?")
+    'adds the item entered to the array lisy
+    inventory.Add(item)
+'if the second option is selected
+ElseIf answer = "2" Then
+    'ask the user to input the item to remove
+    item = InputBox("What item would you like to remove from the inventory?")
+    'use remove to delete the item from the array list
+    inventory.Remove(item)
+End If
+'for loop that will output the updated list
+lstOutput.Items.Add("Updated Inventory:")
+For x = 0 To inventory.Count - 1
+    lstOutput.Items.Add(inventory(x))
+Next
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="imagesvb/arrays4vb.png" alt="Arrays4" /></th>
+      <th style="text-align: center"><strong>Adding</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="imagesvb/arrays5vb.png" alt="Arrays5" /></td>
+      <td style="text-align: center"><strong>Removing</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="functions">Functions</h1>
+
+<h2 id="what-are-procedures--functions">What are Procedures / Functions?</h2>
+<ul>
+  <li>When producing large programs you can end up with a lot of code. Procedures and functions allow for programs to be broken up into smaller pieces.</li>
+  <li>This makes them easier to read and easier to follow. It also means that if you work in a team, people can create different procedures/functions and combine them together.</li>
+  <li>Procedures/Functions can take values from the main program and do something with them e.g. add numbers together etc.</li>
+</ul>
+
+<h2 id="what-does-a-function-look-like">What does a function look like?</h2>
+
+<p>A function is either being defined or called. You define the function and what you want it to do first. Then in the main program you call the function that you have created.</p>
+
+<p><strong>Defining</strong></p>
+<pre><code class="language-vbnet">Function functionname(parameters)
+	CODE INSIDE THE FUNCTION
+End Function
+</code></pre>
+
+<p><strong>Calling</strong></p>
+<pre><code class="language-vbnet">functionname(parameters)
+</code></pre>
+
+<h2 id="worked-example---vat-calculator">Worked example - VAT Calculator</h2>
+<p>This program will ask the user to enter a price and then calculate the VAT by calling a function.</p>
+
+<h3 id="step-1---creating-the-interface">Step 1 - Creating the Interface</h3>
+<p>Like any Visual Basic program you need to create the interface, the interface for this program is shown below:</p>
+
+<p><img src="imagesvb/functions1vb.png" alt="Functions1" /></p>
+
+<h3 id="step-2---create-the-function">Step 2 - Create the function</h3>
+<p>The first thing you should do is create the function that calculates the VAT (VAT is 20% of the price)</p>
+
+<p>To define a function you need to do the following:</p>
+<pre><code class="language-vbnet">Function calculate(ByVal price As Decimal)
+</code></pre>
+<p><strong>What this does:</strong></p>
+<ul>
+  <li><strong>Function</strong> - this lets Visual Basic know you are defining a function</li>
+  <li><strong>calculate</strong> - this is the name of the function</li>
+  <li><strong>(ByVal price As Integer)</strong> - this is a parameter. This is what is passed from the main program into the function. You refer to the value passed into the function by price. As you are passing in a value you must add <code class="highlighter-rouge">ByVal</code> before the name of the parameter and then just like you would when defining a variable say what data type it is, in this case <code class="highlighter-rouge">As Integer</code></li>
+</ul>
+
+<p>Once the function is defined you can write whatever code you want to execute inside of it. In this case we need to work out the VAT, this is 20% of the price.</p>
+<pre><code class="language-vbnet">Function calculate(ByVal price As Decimal)
+	Dim vat As Decimal = price * 0.2
+End Function
+</code></pre>
+
+<p>The final step is to return the VAT value back to the main program, therefore you need to add the code:</p>
+<pre><code class="language-vbnet">return vat
+</code></pre>
+
+<h3 id="step-2---creating-the-main-program">Step 2 - Creating the Main Program</h3>
+<p>Once you have created the necessary functions you can create the main program. You would write the code for this for when the button is clicked, like you have done in other programs.</p>
+
+<p>In this program the user enters the price, therefore this will need to be stored:</p>
+<pre><code class="language-vbnet">Dim amount As Decimal = txtPrice.Text
+</code></pre>
+
+<p>Now you have the input stored from the user you need to display the VAT. To do this you will need to
+use the a message box like you normally would but inside of it call the function you created
+earlier. Add the following code:</p>
+<pre><code class="language-vbnet">MessageBox.Show("The VAT is " + FormatCurrency(calculate(amount)))
+</code></pre>
+<p>The first part of the message box command works like it always would, but then it called the function <strong>calculate</strong> and passes the <strong>amount</strong> that was entered into the function. Once the amount is in the function it is referred to as <strong>price</strong>. This is known as a local variable that can only be used within that function.</p>
+
+<p>The final code that is run when <strong>btnVAT</strong> is clicked:</p>
+<pre><code class="language-vbnet">Dim amount As Decimal = txtPrice.Text
+MessageBox.Show("The VAT is " + FormatCurrency(calculate(amount)))
+</code></pre>
+<p>The final function code:</p>
+<pre><code class="language-vbnet">Function calculate(ByVal price As Integer)
+    Dim vat As Decimal = price * 0.2
+    Return vat
+End Function
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/functions2vb.PNG" alt="Functions2" /></p>
+
+<h2 id="example-program-1---highest-number">Example Program 1 - Highest Number</h2>
+<p>This program will ask the user to enter two numbers. A function will then be called that checks which number is the highest and then output which one is the largest. If they are the same it will say they are the same.</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/functions3vb.png" alt="Functions3" /></p>
+
+<p><strong>Code when btnFind is clicked</strong></p>
+<pre><code class="language-vbnet">'stores the numbers entered by the user on the interface
+Dim num1 As Integer = txtNumber1.Text
+Dim num2 As Integer = txtNumber2.Text
+'calls the function and stores the result in highest
+Dim highest As Integer = max(num1, num2)
+'if highest is 0 that means they are the same
+If highest = 0 Then
+    MessageBox.Show("Both numbers are the same")
+Else
+    'if highest is not 0 it prints the largest number
+    MessageBox.Show(highest.ToString + " is the largest number")
+End If
+</code></pre>
+
+<p><strong>Code to create the function</strong></p>
+<pre><code class="language-vbnet">'function that uses two parameters
+Function max(ByVal first As Integer, ByVal second As Integer) As Integer
+    'checks if first is more than second
+    If first &gt; second Then
+        'if it is returns the first number
+        Return first
+    'checks if second is more than first
+    ElseIf second &gt; first Then
+        'if it is returns the second number
+        Return second
+    Else
+        'if they are the same returns 0
+        Return 0
+    End If
+End Function
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/functions4vb.png" alt="Functions4" />
+<img src="imagesvb/functions5vb.png" alt="Functions5" /></p>
+
+<h2 id="example-program-2---conversion-program">Example Program 2 - Conversion Program</h2>
+<p>This program will ask the user what conversion method they want to use. After the user has chosen an option it will then ask them to enter a value. It will then call the relevant function and convert the number.</p>
+
+<p><strong>Interface</strong></p>
+
+<p><img src="imagesvb/functions6vb.png" alt="Functions6" /></p>
+
+<p><strong>Code when btnCalculate is clicked</strong></p>
+<pre><code class="language-vbnet">'stores the measurement entered by the user on the interface
+Dim measurement As Decimal = txtMeasurement.Text
+'stores the selection made by the user on the interface
+Dim selection As String = cmbConversion.Text
+'if M to KM is selected in the combo box
+If selection = "M to KM" Then
+    'calls the relevant function and then displays the conversion
+    MessageBox.Show(measurement.ToString + " miles in KM is " + mtokm(measurement).ToString)
+'if KM to M is selected in the combo box
+ElseIf selection = "KM to M" Then
+    'calls the relevant function and then displays the conversion
+    MessageBox.Show(measurement.ToString + " KM in miles is " + kmtom(measurement).ToString)
+'if CM to Inch is selected in the combo box
+ElseIf selection = "CM to Inch" Then
+    'calls the relevant function and then displays the conversion
+    MessageBox.Show(measurement.ToString + " CM in Inches is " + cmtoinch(measurement).ToString)
+'if any other value is entered
+Else
+    'calls the relevant function and then displays the conversion
+    MessageBox.Show(measurement.ToString + " Inces in CM is " + inchtocm(measurement).ToString)
+End If
+</code></pre>
+
+<p><strong>Code to create the necessary functions</strong></p>
+<pre><code class="language-vbnet">'function that converts miles to kilometres
+Function mtokm(ByVal number As Decimal)
+    Dim answer As Decimal = number * 1.6
+    Return answer
+End Function
+'function that converts kilometres to miles
+Function kmtom(ByVal number As Decimal)
+    Dim answer As Decimal = number * 0.62
+    Return answer
+End Function
+'function that converts cm to inches
+Function cmtoinch(ByVal number As Decimal)
+    Dim answer As Decimal = number * 0.39
+    Return answer
+End Function
+'function that converts inches to cm
+Function inchtocm(ByVal number As Decimal)
+    Dim answer As Decimal = number * 2.54
+    Return answer
+End Function
+</code></pre>
+
+<p>This is what happens when the button is clicked:</p>
+
+<p><img src="imagesvb/functions7vb.png" alt="Functions7" /></p>
+</div>
+        </div>
+
+        <div class="col-md-3 bs-docs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-docs-sidenav"></ul>
+
+            <a class="back-to-top" id="back-to-top" href="#top"> <i class="glyphicon glyphicon-chevron-up"></i>
+                Back to top
+            </a>
+        </div>
+    </div>
+
+    
+</div>
+
+
+        <footer class="bs-docs-footer" role="contentinfo">
+    <div class="container">
+        <div class="bs-docs-social">
+            <ul class="bs-docs-social-buttons">
+                
+            </ul>
+        </div>
+
+        <p>
+            OGAT Computer Science 2017. v1.2</a>
+        </p>
+        <p>
+        </p>
+
+
+    </div>
+</footer>
+
+
+
+
+
+    </body>
+</html>

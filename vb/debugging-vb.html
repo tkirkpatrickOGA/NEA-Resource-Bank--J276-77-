@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Debugging</title>
+<meta name="description"
+      content="">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/docs.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+
+<link rel="stylesheet" href="css/main.css">
+
+
+<link rel="canonical" href="/debugging-vb.html">
+<link rel="alternate" type="application/rss+xml" title="J276 NEA Resource Bank" href="/feed.xml">
+
+<style>
+    #jumbotron-header {
+        background: #5B3293;
+        background: linear-gradient(135deg, #5B3293, #5B3293);
+    }
+</style>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stickyfill.min.js"></script>
+<script src='assets/js/docs.min.js'></script>
+
+    </head>
+
+    <body>
+        
+<!--
+<header class="navbar navbar-static-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html">OGAT NEA Resource Bank - J276</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+
+
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                        <li >
+                            <a href="/algorithms-vb.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li class="active">
+                            <a href="/debugging-vb.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/evidencing-vb.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="/key-syntax-vb.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/programming-vb.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/rules-vb.html">Rules</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="/testing-vb.html">Testing</a>
+                        </li>
+                    
+                
+            </ul>
+
+
+
+        </nav>
+    </div>
+</header>
+-->
+
+<header class="navbar navbar-fixed-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">J276 NEA Resource Bank</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="./key-syntax-vb.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./programming-vb.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./evidencing-vb.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./algorithms-vb.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./testing-vb.html">Testing</a>
+                        </li>
+                    
+                
+                    
+                        <li class="active">
+                            <a href="./debugging-vb.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./rules-vb.html">Rules</a>
+                        </li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+        
+    <div class="bs-docs-header" id="jumbotron-header">
+        <div class="container">
+            <h1>Debugging</h1>
+            <p></p>
+        </div>
+    </div>
+
+
+
+        <div class="container">
+    <div class="bs-docs-container row">
+        <div class="col-md-12" role="main">
+            <div class="bs-docs-section"><h1 id="debugging">Debugging</h1>
+
+<p>Below are some of the common errors that you will find when using Visual Basic with how to overcome them. If you have an error that is not listed here, use the error panel at the bottom of your screen to help you solve what is wrong.</p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="imagesvb/debugging1vb.png" alt="Debugging1" />
+<img src="imagesvb/debugging2vb.png" alt="Debugging2" /></p>
+
+<p><strong>Reason:</strong> this has happened as there is a missing bracket in your code. Visual Studio will tell you what line it is on. You should look for the blue line to help you find where you need to put it.</p>
+
+<p><strong>Solution:</strong> Add the speech marks in the correct place. The change on this example is shown below:</p>
+
+<p><img src="imagesvb/debugging3vb.png" alt="Debugging3" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="imagesvb/debugging4vb.png" alt="Debugging4" />
+<img src="imagesvb/debugging5vb.png" alt="Debugging5" /></p>
+
+<p><strong>Reason:</strong> this has happened as there is a missing bracket at the end of the <code class="highlighter-rouge">len</code> function.</p>
+
+<p><strong>Solution:</strong> Add the bracket in the correct place. The change on this example is shown below:</p>
+
+<p><img src="imagesvb/debugging6vb.png" alt="Debugging6" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="imagesvb/debugging7vb.png" alt="Debugging7" />
+<img src="imagesvb/debugging8vb.png" alt="Debugging8" /></p>
+
+<p><strong>Reason:</strong> this has happened as there is an incorrect number of close brackets at the end of the line of code. As there is two open brackets (one for adding an item to the list box and one for adding a new item) there needs to be two at the end.</p>
+
+<p><strong>Solution:</strong> Add the bracket in the correct place. The change on this example is shown below:</p>
+
+<p><img src="imagesvb/debugging9vb.png" alt="Debugging9" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="imagesvb/debugging10vb.png" alt="Debugging10" />
+<img src="imagesvb/debugging11vb.png" alt="Debugging11" /></p>
+
+<p><strong>Reason:</strong> this has happened as the string in the <code class="highlighter-rouge">MessageBox</code> message has not been joined with <code class="highlighter-rouge">vbNewLine</code>, a <code class="highlighter-rouge">+</code> or <code class="highlighter-rouge">&amp;</code> is missing.</p>
+
+<p><strong>Solution:</strong> Add the <code class="highlighter-rouge">+</code> or <code class="highlighter-rouge">&amp;</code> in the correct place. Visual Studio will normally put a blue underline where the error starts. The change on this example is shown below:</p>
+
+<p><img src="imagesvb/debugging12vb.png" alt="Debugging12" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="imagesvb/debugging13vb.png" alt="Debugging13" />
+<img src="imagesvb/debugging14vb.png" alt="Debugging14" /></p>
+
+<p><strong>Reason:</strong> this has happened as you should <code class="highlighter-rouge">.Text</code> after any form control that you are referring to when coding.</p>
+
+<p><strong>Solution:</strong> Add <code class="highlighter-rouge">.Text</code> to the end of the form control. In this scenario it needs to be <code class="highlighter-rouge">txtRadius.Text</code>The change on this example is shown below:</p>
+
+<p><img src="imagesvb/debugging15vb.png" alt="Debugging15" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="imagesvb/debugging16vb.png" alt="Debugging16" />
+<img src="imagesvb/debugging17vb.png" alt="Debugging17" /></p>
+
+<p><strong>Reason:</strong> this has happened as an <code class="highlighter-rouge">If</code> statement must end with an <code class="highlighter-rouge">End If</code></p>
+
+<p><strong>Solution:</strong> Add <code class="highlighter-rouge">End If</code> at the end of the <code class="highlighter-rouge">If</code> statement. The change on this example is shown below:</p>
+
+<p><img src="imagesvb/debugging18vb.png" alt="Debugging18" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="imagesvb/debugging19vb.png" alt="Debugging19" />
+<img src="imagesvb/debugging20vb.png" alt="Debugging20" /></p>
+
+<p><strong>Reason:</strong> this has happened as a <code class="highlighter-rouge">For</code> loop must end with <code class="highlighter-rouge">Next</code></p>
+
+<p><strong>Solution:</strong> Add <code class="highlighter-rouge">Next</code> at the end of the loop. The change on this example is shown below:</p>
+
+<p><img src="imagesvb/debugging21vb.png" alt="Debugging21" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="imagesvb/debugging22vb.png" alt="Debugging22" />
+<img src="imagesvb/debugging23vb.png" alt="Debugging23" /></p>
+
+<p><strong>Reason:</strong> this has happened as a <code class="highlighter-rouge">While</code> loop must end with <code class="highlighter-rouge">End While</code></p>
+
+<p><strong>Solution:</strong> Add <code class="highlighter-rouge">End While</code> at the end of the loop. The change on this example is shown below:</p>
+
+<p><img src="imagesvb/debugging24vb.png" alt="Debugging24" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="imagesvb/debugging25vb.png" alt="Debugging25" />
+<img src="imagesvb/debugging26vb.png" alt="Debugging26" /></p>
+
+<p><strong>Reason:</strong> this has happened as the variable name cannot be found. It was declared as <code class="highlighter-rouge">answer</code> but has been referred to as <code class="highlighter-rouge">answers</code>, an obvious spelling mistake.</p>
+
+<p><strong>Solution:</strong> Change the name of the variable to match what you defined it as. The change on this example is shown below:</p>
+
+<p><img src="imagesvb/debugging27vb.png" alt="Debugging27" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="imagesvb/debugging28vb.png" alt="Debugging28" /></p>
+
+<p><strong>Reason:</strong> this has happened as the path to the file you are trying to read is incorrect or the file is not in that location</p>
+
+<p><strong>Solution:</strong> make sure the <code class="highlighter-rouge">.csv</code> file that you are trying to read is in the path you have specified.</p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="imagesvb/debugging29vb.png" alt="Debugging29" /></p>
+
+<p><strong>Reason:</strong> this has happened for one of two reasons, either you have the file open on the computer, or you have been reading/writing to the same file and forgot to close the connection.</p>
+
+<p><strong>Solution:</strong> close the connection to the file if you were previously reading. In this example the file was being read first using the variable <code class="highlighter-rouge">reader</code> and then it is attempting to write to the same file using the <code class="highlighter-rouge">filewriter</code> variable. However the connection from reading has not been closed, therefore <code class="highlighter-rouge">reader.Close()</code> is needed to close the read connection before opening the write connection. If this is not the problem then check you do not have the file open on your computer.</p>
+
+<p><img src="imagesvb/debugging30vb.png" alt="Debugging30" /></p>
+</div>
+        </div>
+
+        <div class="col-md-3 bs-docs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-docs-sidenav"></ul>
+
+            <a class="back-to-top" id="back-to-top" href="#top"> <i class="glyphicon glyphicon-chevron-up"></i>
+                Back to top
+            </a>
+        </div>
+    </div>
+
+    
+</div>
+
+
+        <footer class="bs-docs-footer" role="contentinfo">
+    <div class="container">
+        <div class="bs-docs-social">
+            <ul class="bs-docs-social-buttons">
+                
+            </ul>
+        </div>
+
+        <p>
+            OGAT Computer Science 2017. v1.2</a>
+        </p>
+        <p>
+        </p>
+
+
+    </div>
+</footer>
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Testing</title>
+<meta name="description"
+      content="">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/docs.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+
+<link rel="stylesheet" href="css/main.css">
+
+
+<link rel="canonical" href="/testing-vb.html">
+<link rel="alternate" type="application/rss+xml" title="J276 NEA Resource Bank" href="/feed.xml">
+
+<style>
+    #jumbotron-header {
+        background: #5B3293;
+        background: linear-gradient(135deg, #5B3293, #5B3293);
+    }
+</style>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stickyfill.min.js"></script>
+<script src='assets/js/docs.min.js'></script>
+
+    </head>
+
+    <body>
+        
+<!--
+<header class="navbar navbar-static-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html">OGAT NEA Resource Bank - J276</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+
+
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                        <li >
+                            <a href="/algorithms-vb.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/debugging-vb.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/evidencing-vb.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="/key-syntax-vb.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/programming-vb.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/rules-vb.html">Rules</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                        <li class="active">
+                            <a href="/testing-vb.html">Testing</a>
+                        </li>
+                    
+                
+            </ul>
+
+
+
+        </nav>
+    </div>
+</header>
+-->
+
+<header class="navbar navbar-fixed-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">J276 NEA Resource Bank</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="./key-syntax-vb.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./programming-vb.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./evidencing-vb.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./algorithms-vb.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li class="active">
+                            <a href="./testing-vb.html">Testing</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./debugging-vb.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./rules-vb.html">Rules</a>
+                        </li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+        
+    <div class="bs-docs-header" id="jumbotron-header">
+        <div class="container">
+            <h1>Testing</h1>
+            <p></p>
+        </div>
+    </div>
+
+
+
+        <div class="container">
+    <div class="bs-docs-container row">
+        <div class="col-md-12" role="main">
+            <div class="bs-docs-section"><h1 id="testing">Testing</h1>
+
+<p>When you complete the testing section of your project you need to make sure your testing table is specific and attempts to test all possible inputs.</p>
+
+<p>Below are a series of programs and completed testing tables so you can see how you should complete the testing tables.</p>
+
+<h2 id="example-1---email-address-validation">Example 1 - Email Address Validation</h2>
+<table><tr>This program gets the user to enter an email address and it will decide if it is valid or not. The email address must follow the following format:
+<td>
+<ul>
+<li>start with a string of alphanumeric characters</li>
+<li>followed by the @ symbol</li>
+<li>another string of alphanumeric characters</li>
+<li>followed by a "."</li>
+<li>then a string of alphanumeric characters</li>
+</ul>
+</td>
+<td><img src="./imagesvb/testingint1.png" /></td></tr></table>
+
+<p><strong>Program code:</strong></p>
+
+<pre><code class="language-vbnet">Dim email As String = txtEmail.Text
+If Len(email) = 0 Then
+    MessageBox.Show("INVALID")
+Else
+    Dim pattern As String = "^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+$"
+    Dim emailAddressMatch As Match = Regex.Match(email, pattern)
+    If emailAddressMatch.ToString = email Then
+        MessageBox.Show("VALID")
+    Else
+        MessageBox.Show("INVALID")
+    End If
+End If
+</code></pre>
+
+<p><strong>Testing Table:</strong></p>
+
+<p><img src="./imagesvb/testing1vb.png" alt="Testing1" /></p>
+
+<p><strong>Testing Evidence:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="./imagesvb/testing2vb.png" alt="Testing2" /></th>
+      <th><strong>Test 1</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="./imagesvb/testing3vb.png" alt="Testing3" /></td>
+      <td><strong>Test 2</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./imagesvb/testing4vb.png" alt="Testing4" /></td>
+      <td><strong>Test 3</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./imagesvb/testing5vb.png" alt="Testing5" /></td>
+      <td><strong>Test 4</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./imagesvb/testing6vb.png" alt="Testing6" /></td>
+      <td><strong>Test 5</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example-2---grade-calculator">Example 2 - Grade Calculator</h2>
+<p>This program gets the user to enter a test score between 0 and 100. It will then say the grade and how many marks they are off the next grade. The grade boundaries are:</p>
+<table>
+<tr><td>
+<ul>
+<li>A = 70+</li>
+<li>B = 60+</li>
+<li>C = 50+</li>
+<li>D = 40+</li>
+<li>U = &lt;40</li>
+</ul>
+</td>
+<td><img src="./imagesvb/testingint2.png" /></td></tr></table>
+
+<p><strong>Program code:</strong></p>
+
+<pre><code class="language-vbnet">Dim nextBoundary As Integer
+If IsNumeric(txtScore.Text) = False Then
+    MessageBox.Show("Please enter a number")
+    Return
+ElseIf Int(txtScore.Text) &lt; 0 Or Int(txtScore.Text) &gt; 100 Then
+    MessageBox.Show("Please enter a number between 0 and 100")
+    Return
+End If
+If txtScore.Text &gt;= 70 Then
+    nextBoundary = 100 - txtScore.Text
+    MessageBox.Show("That test score is an A grade, you needed " &amp; nextBoundary.ToString &amp; " more marks to gain full marks")
+ElseIf txtScore.Text &gt;= 60 Then
+    nextBoundary = 70 - txtScore.Text
+    MessageBox.Show("That test score is a B grade, you needed " &amp; nextBoundary.ToString &amp; " more marks to get an A")
+ElseIf txtScore.Text &gt;= 50 Then
+    nextBoundary = 60 - txtScore.Text
+    MessageBox.Show("That test score is a C grade, you needed " &amp; nextBoundary.ToString &amp; " more marks to get an B")
+ElseIf txtScore.Text &gt;= 40 Then
+    nextBoundary = 50 - txtScore.Text
+    MessageBox.Show("That test score is a D grade, you needed " &amp; nextBoundary.ToString &amp; " more marks to get an C")
+Else
+    nextBoundary = 40 - txtScore.Text
+    MessageBox.Show("That test score is a U grade, you needed " &amp; nextBoundary.ToString &amp; " more marks to get an D")
+End If
+</code></pre>
+
+<p><strong>Testing Table:</strong></p>
+
+<p><img src="./imagesvb/testing7vb.png" alt="Testing7" /></p>
+
+<p><strong>Testing Evidence:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><img src="./imagesvb/testing9vb.png" alt="Testing9" /></th>
+      <th><strong>Test 1</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><img src="./imagesvb/testing10vb.png" alt="Testing10" /></td>
+      <td><strong>Test 2</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><img src="./imagesvb/testing11vb.png" alt="Testing11" /></td>
+      <td><strong>Test 3</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><img src="./imagesvb/testing12vb.png" alt="Testing12" /></td>
+      <td><strong>Test 4</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><img src="./imagesvb/testing13vb.png" alt="Testing13" /></td>
+      <td><strong>Test 5</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Testing Table:</strong></p>
+
+<p><img src="./imagesvb/testing8vb.png" alt="Testing8" /></p>
+
+<p><strong>Testing Evidence:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><img src="./imagesvb/testing14vb.png" alt="Testing14" /></th>
+      <th><strong>Test 6</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><img src="./imagesvb/testing15vb.png" alt="Testing15" /></td>
+      <td><strong>Test 7</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><img src="./imagesvb/testing16vb.png" alt="Testing16" /></td>
+      <td><strong>Test 8</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><img src="./imagesvb/testing17vb.png" alt="Testing17" /></td>
+      <td><strong>Test 9</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><img src="./imagesvb/testing18vb.png" alt="Testing18" /></td>
+      <td><strong>Test 10</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example-3---speeding-cars">Example 3 - Speeding Cars</h2>
+<p>This program reads a file that contains a list of car registration plates and the speed they were captured at going through a speed camera. The user will enter the speed limit and it will display which of the cars in the file were speeding. Part of the file <code class="highlighter-rouge">cars.csv</code> is shown below:</p>
+
+<p>| <img src="./imagesvb/testing19vb.png" alt="Testing19" /> | <img src="./imagesvb/testingint3.png" alt="TestingInt3" /> |
+|—|—|</p>
+
+<p><strong>Program code:</strong></p>
+
+<pre><code class="language-vbnet">lstOutput.Items.Clear()
+Dim carsdata As New StreamReader("D:\cars.csv")
+Dim details As Array
+Dim found As Boolean = False
+Dim carspeed As Integer = cmbSpeedLimit.Text
+While carsdata.EndOfStream = False
+    details = carsdata.ReadLine.Split(",")
+    If details(1) &gt; carspeed Then
+        lstOutput.Items.Add(details(0) &amp; "," &amp; details(1))
+        found = True
+    End If
+End While
+If found = False Then
+    MessageBox.Show("There were no cars that broke the speed limit of " &amp; cmbSpeedLimit.Text)
+End If
+</code></pre>
+
+<p><strong>Testing Table:</strong></p>
+
+<p><img src="./imagesvb/testing20vb.png" alt="Testing20" /></p>
+
+<p><strong>Testing Evidence:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="./imagesvb/testing21vb.png" alt="Testing21" /></th>
+      <th style="text-align: center"><img src="./imagesvb/testing22vb.png" alt="Testing22" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>Test 1</strong></td>
+      <td style="text-align: center"><strong>Test 2</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="./imagesvb/testing23vb.png" alt="Testing23" /></td>
+      <td style="text-align: center"><strong>Test 3</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example-4---order-program">Example 4 - Order Program</h2>
+<p>This program reads a file that contains a list of products and their prices sold in a shop. The user enters a GTIN code (barcode) and how many the customer wants. It then calculates the total cost of each item and a grand total and creates a receipt.</p>
+
+<p>| <img src="./imagesvb/testing29vb.png" alt="Testing29" /> |<img src="./imagesvb/testingint4.png" alt="TestingInt4" /> |
+|:-:|:-:|</p>
+
+<p><strong>Program code:</strong></p>
+
+<pre><code class="language-vbnet">Dim totalcost As Decimal
+Private Sub btnCheck_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCheck.Click
+    Dim itemcost As Decimal
+    Dim reader As New StreamReader("D:\products.csv")
+    Dim productInfo As Array
+    Dim quantity As Integer = txtQuan.Text
+    Dim gtin As String = txtGTIN.Text
+    Dim found As Boolean = False
+    Do While reader.EndOfStream = False
+        productInfo = reader.ReadLine.Split(",")
+        If productInfo(0) = gtin Then
+            itemcost = productInfo(2) * quantity
+            lstItems.Items.Add(New ListViewItem({productInfo(0), productInfo(1), quantity, FormatCurrency(productInfo(2)), FormatCurrency(itemcost)}))
+            found = True
+            totalcost = totalcost + itemcost
+        End If
+    Loop
+    If found = False Then
+        lstItems.Items.Add(New ListViewItem({txtGTIN.Text, "Product not found"}))
+    End If
+End Sub
+Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    lstItems.Items.Clear()
+    lstItems.Columns.Add("GTIN Code", 75, HorizontalAlignment.Center)
+    lstItems.Columns.Add("Description", 200, HorizontalAlignment.Center)
+    lstItems.Columns.Add("Quantity", 75, HorizontalAlignment.Center)
+    lstItems.Columns.Add("Cost", 50, HorizontalAlignment.Center)
+    lstItems.Columns.Add("Total", 50, HorizontalAlignment.Center)
+End Sub
+Private Sub btnTotal_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTotal.Click
+    txtTotal.Text = FormatCurrency(totalcost)
+End Sub
+</code></pre>
+
+<p><strong>Testing Table:</strong></p>
+
+<p><img src="./imagesvb/testing24vb.png" alt="Testing24" /></p>
+
+<p><strong>Testing Evidence:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="./imagesvb/testing25vb.png" alt="Testing25" /></th>
+      <th><strong>Test 1</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="./imagesvb/testing26vb.png" alt="Testing26" /></td>
+      <td><strong>Test 2</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./imagesvb/testing27vb.png" alt="Testing27" /></td>
+      <td><strong>Test 3</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./imagesvb/testing28vb.png" alt="Testing28" /></td>
+      <td><strong>Test 4</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example-5---reorder-program">Example 5 - Reorder Program</h2>
+<p>This program reads a file that contains a list of products and how many there are in stock. If the number in stock is low, it works out how many need to be reordered and then creates a new file of the products that need to be reordered as well as how many.</p>
+
+<p><img src="./imagesvb/testingint5.png" alt="TestingInt5" /></p>
+
+<p><strong>Program code:</strong></p>
+<pre><code class="language-vbnet">Private Sub btnReorder_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnReorder.Click
+    lstreorder.Items.Clear()
+    Dim reader As New StreamReader("D:\catalogue.csv")
+    Dim productinfo As Array
+    Dim reorderamount As Integer
+    Do While reader.EndOfStream = False
+        productinfo = reader.ReadLine.Split(",")
+        If productinfo(3) &lt; productinfo(4) Then
+            reorderamount = productinfo(5) - productinfo(3)
+            lstreorder.Items.Add(New ListViewItem({productinfo(0), productinfo(1), reorderamount}))
+            Dim reorder As New StreamWriter("D:\reorder.csv", True)
+            reorder.WriteLine(productinfo(0) &amp; "," &amp; productinfo(1) &amp; "," &amp; reorderamount)
+            reorder.Close()
+        End If
+    Loop
+    If lstreorder.Items.Count &gt; 0 Then
+        MessageBox.Show("Reorder file created")
+    Else
+        MessageBox.Show("No products need reordering")
+    End If
+End Sub
+Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    lstreorder.Columns.Add("GTIN Code", 75, HorizontalAlignment.Center)
+    lstreorder.Columns.Add("Description", 200, HorizontalAlignment.Center)
+    lstreorder.Columns.Add("Reorder Amount", 100, HorizontalAlignment.Center)
+End Sub
+</code></pre>
+
+<p><strong>Testing Table:</strong></p>
+
+<p><img src="./imagesvb/testing30vb.png" alt="Testing30" /></p>
+
+<p><strong>Testing Evidence:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="./imagesvb/testing31vb.png" alt="Testing31" /></th>
+      <th><strong>Test 1</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="./imagesvb/testing32vb.png" alt="Testing32" /></td>
+      <td><strong>Test 2</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./imagesvb/testing33vb.png" alt="Testing33" /></td>
+      <td><strong>Test 3</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example-6---updating-staff-information">Example 6 - Updating Staff Information</h2>
+<p>This program updates the number of years a member of staff has been working at the school. When the program runs the user enters their email address, when it finds the person it asks them to enter their number of years teaching. It will then update the file if the person exists in the file.</p>
+
+<p><img src="./imagesvb/testingint6.png" alt="TestingInt6" /></p>
+
+<p><strong>Program code:</strong></p>
+<pre><code class="language-vbnet">Private Sub btnFind_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnFind.Click
+    Dim reader As New StreamReader("D:/staff.csv")
+    Dim details As Array
+    Dim found As Boolean = False
+    Do While reader.EndOfStream = False
+        details = reader.ReadLine.Split(",")
+        If details(2) = txtEmail.Text Then
+            txtFirstName.Text = details(0)
+            txtSurname.Text = details(1)
+            txtYears.Text = details(3)
+            found = True
+        End If
+    Loop
+    reader.Close()
+    If found = False Then
+        MessageBox.Show("Member of staff not found, please try another email")
+    End If
+End Sub
+Private Sub btnUpdate_Click(sender As System.Object, e As System.EventArgs) Handles btnUpdate.Click
+    Dim reader As New StreamReader("D:/staff.csv")
+    Dim details As Array
+    Do While reader.EndOfStream = False
+        details = reader.ReadLine.Split(",")
+        Dim updatedfile As New StreamWriter("D:/staffupdated.csv", True)
+        If details(2) = txtEmail.Text Then
+            updatedfile.WriteLine(txtFirstName.Text &amp; "," &amp; txtSurname.Text &amp; "," &amp; txtEmail.Text &amp; "," &amp; txtYears.Text)
+        Else
+            updatedfile.WriteLine(details(0) + "," + details(1) + "," + details(2) + "," + details(3))
+        End If
+        updatedfile.Close()
+    Loop
+    reader.Close()
+    My.Computer.FileSystem.DeleteFile("D:\staff.csv")
+    My.Computer.FileSystem.RenameFile("D:\staffupdated.csv", "staff.csv")
+    MessageBox.Show("Staff member details updated")
+End Sub
+</code></pre>
+
+<p><strong>Testing Table:</strong></p>
+
+<p><img src="./imagesvb/testing34vb.png" alt="Testing34" /></p>
+
+<p><strong>Testing Evidence:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="./imagesvb/testing35vb.png" alt="Testing35" /></th>
+      <th><strong>Test 1</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="./imagesvb/testing36vb.png" alt="Testing36" /></td>
+      <td><strong>Test 2</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./imagesvb/testing37vb.png" alt="Testing37" /></td>
+      <td><strong>Test 3</strong></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        </div>
+
+        <div class="col-md-3 bs-docs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-docs-sidenav"></ul>
+
+            <a class="back-to-top" id="back-to-top" href="#top"> <i class="glyphicon glyphicon-chevron-up"></i>
+                Back to top
+            </a>
+        </div>
+    </div>
+
+    
+</div>
+
+
+        <footer class="bs-docs-footer" role="contentinfo">
+    <div class="container">
+        <div class="bs-docs-social">
+            <ul class="bs-docs-social-buttons">
+                
+            </ul>
+        </div>
+
+        <p>
+            OGAT Computer Science 2017. v1.2</a>
+        </p>
+        <p>
+        </p>
+
+
+    </div>
+</footer>
+
+
+
+
+
+    </body>
+</html>

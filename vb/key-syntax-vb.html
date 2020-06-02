@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Key Syntax</title>
+<meta name="description"
+      content="">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/docs.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+
+<link rel="stylesheet" href="css/main.css">
+
+
+<link rel="canonical" href="/key-syntax-vb.html">
+<link rel="alternate" type="application/rss+xml" title="J276 NEA Resource Bank" href="/feed.xml">
+
+<style>
+    #jumbotron-header {
+        background: #5B3293;
+        background: linear-gradient(135deg, #5B3293, #5B3293);
+    }
+</style>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stickyfill.min.js"></script>
+<script src='assets/js/docs.min.js'></script>
+
+    </head>
+
+    <body>
+        
+<!--
+<header class="navbar navbar-static-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html">OGAT NEA Resource Bank - J276</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+
+
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                        <li >
+                            <a href="/algorithms-vb.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/debugging-vb.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/evidencing-vb.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li class="active">
+                            <a href="/key-syntax-vb.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/programming-vb.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/rules-vb.html">Rules</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="/testing-vb.html">Testing</a>
+                        </li>
+                    
+                
+            </ul>
+
+
+
+        </nav>
+    </div>
+</header>
+-->
+
+<header class="navbar navbar-fixed-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">J276 NEA Resource Bank</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li class="active">
+                            <a href="./key-syntax-vb.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./programming-vb.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./evidencing-vb.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./algorithms-vb.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./testing-vb.html">Testing</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./debugging-vb.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./rules-vb.html">Rules</a>
+                        </li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+        
+    <div class="bs-docs-header" id="jumbotron-header">
+        <div class="container">
+            <h1>Key Syntax</h1>
+            <p></p>
+        </div>
+    </div>
+
+
+
+        <div class="container ">
+    <div class="" role="main"><h1 id="key-syntax">Key Syntax</h1>
+
+<p>Below is a summary of the key commands you may need in your controlled assessment as well as examples of them being used:</p>
+<table class="table table-responsive">
+<tr>
+	<td><b>Command</b></td>
+	<td><b>Description</b></td>
+	<td><b>Example of Use</b></td>
+</tr>
+<tr>
+	<td><pre lang="python">Dim variableName As String
+Dim variableName As Integer
+Dim variableName As Decimal
+Dim variableName As Boolean</pre></td>
+	<td>Declare a variable to store data to a particular data type</td>
+	<td><pre lang="python">Dim name As String = “Bob”
+Dim age As Integer = 15
+Dim attendance As Decimal = txtAttendance.text
+Dim tired As Boolean = True
+</pre>
+&lt;/tr&gt;
+<tr>
+	<td><pre lang="python">MessageBox.Show()</pre></td>
+	<td>Used to create a popup box on screen with text in.</td>
+	<td><pre lang="python">Messagebox.Show(“Hello World”)</pre>If you wish to join a string to a variable, you can use a + or a &amp; like below:<br />
+	<pre lang="python">Dim name As String = “Bob”
+Messagebox.Show(“Hello “ + name)
+Messagebox.Show(“Hello “ &amp; name)
+</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">InputBox()</pre></td>
+	<td>Used to take input from a user, if you wish to store this input you need to assign it to a variable</td>
+	<td><pre lang="python">
+InputBox(“What is your name”)</pre>If you want to assign to a variable, it needs to be:<pre lang="python">Dim variableName As String = InputBox(“Text to display”)</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">ListBoxName.Items.Add(data)</pre></td>
+	<td>Used to add information to a list box</td>
+	<td><pre lang="python">Dim name as String = InputBox(“Enter your name “)
+lstOutput.Items.Add(“Hello “ + name)
+</pre>This program will ask the user to enter their name and store it in the name variable. It will then add to the list box “Hello” plus their name. If they entered the name Bob, it would say Hello Bob.</td>
+</tr>
+<tr>
+	<td><pre lang="python">ListBoxName.Columns.Add("Text", Size, Alignment)</pre></td>
+	<td>This is for use with a ListView box. It will create headings along the time of the list view box. If you want 4 headings, you have to have four of these.</td>
+	<td><pre lang="python">
+lstOutput.Columns.Add("Name",150,HorizontalAlignment.Center)
+</pre>This will add a heading to a listview called "Name" that is centre aligned. An example of what the headings look like can be seen below:<br /><img src="imagesvb/keysyntax1vb.png" />
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">vbNewLine</pre></td>
+	<td>Creates a new line inside a message box.</td>
+	<td><pre lang="python">Messagebox.show(“Name: “ + name + vbNewLine + “Age:” + age)</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">.ToString</pre></td>
+	<td>Converts a variable to a string, should be used in a message box command to convert a variable that is not a string back to a string</td>
+	<td><pre lang="python">Messagebox.Show(“The total is “ + total.ToString)</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">.Text</pre></td>
+	<td>To be used after a form control to inform the program that there is text entered</td>
+	<td><pre lang="python">txtName.Text</pre>For example:<br />
+	<pre lang="python">
+Dim name As String = txtName.Text
+</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">Decimal.Round()</pre></td>
+	<td>Rounds a variable to the number of decimal places specified.</td>
+	<td><pre lang="python">Decimal.Round(variableName,dp)</pre> where dp is the number of decimal places. For example:
+<br />
+	<pre lang="python">
+total = Decimal.Round(total,2))
+</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">Decimal.Parse(variableName)</pre></td>
+	<td>Converts a variable that is not currently stored as a decimal to a decimal number.</td>
+	<td><pre lang="python">Decimal.Parse(variableName)</pre>For example:<br />
+	<pre lang="python">
+Dim number1 As String = "1245.34"
+Dim number2 As String = "45.65"
+Dim total As Decimal = Decimal.Parse(number1) +
+                       Decimal.Parse(number2)
+</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">CInt()</pre></td>
+	<td>Converts a variable that is not currently stored as an integer to an integer.</td>
+	<td><pre lang="python">CInt(variableName)</pre>For example:<br />
+	<pre lang="python">
+total = CInt(number1) + CInt(number2)
+</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">
+If condition Then
+   DO IF TRUE
+Else
+   DO IF FALSE
+End If
+</pre></td>
+	<td>An IF statement which checks a condition and then does one of two things</td>
+	<td><pre lang="python">
+If age=15 Then
+    Messagebox.Show(“You can go to the party”)
+Else
+    Messagebox.Show(“You cannot go to the party”)
+End If
+</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">
+If condition Then
+   DO IF TRUE
+ElseIf condition Then
+   DO IF TRUE
+Else
+   DO IF FALSE
+End If
+</pre></td>
+	<td>An if statement that makes use of ElseIf to check two conditions, it will do one thing if the first condition is true, something else if the second condition is true, and if neither are two will do the false part.</td>
+	<td><pre lang="python">
+If number1&gt;number2 Then
+    Messagebox.Show(“Number 1 is bigger”)
+ElseIf number2&gt;number1 Then
+    Messagebox.Show(“Number 2 is bigger”)
+Else
+    Messagebox.Show(“The numbers are the same”)
+End If
+</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">
+For x = a to b Step 1
+    code to loop
+Next
+code to execute after the loop
+</pre></td>
+	<td>This is a for loop that will repeat the code inside of it a set number of times. A is the number at which the loop starts, B is the number at which the loop ends.</td>
+	<td><pre lang="python">
+For x = 0 to 9 Step 1
+    number = InputBox(“Enter a number”)
+    total = total + number
+Next
+</pre>This program will loop ten times. Inside the loop each time it will ask for a number and add to the total.</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+While CONDITION TRUE
+    code to loop
+End While
+code to execute after the loop
+</pre></td>
+	<td>This is a while loop that will repeat the code inside of it while a condition is met. The condition can be anything you want.</td>
+	<td><pre lang="python">
+While age&lt;18
+    age = InputBox(“Please enter an age:”)
+End While
+Messagebox.Show(“You are old enough to see the film”)
+</pre>This while loop will repeat while the age is less than 18. Every time the user enters an age if they enter a number less than 18 it will ask them again. When they enter an age over 18 it will then display the message box command that comes after the loop.</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+Do Until CONDITION TRUE
+    code to loop
+Loop
+code to execute after the loop
+</pre></td>
+	<td>This is a do until loop that will repeat the code inside of it until the condition is met. The condition can be anything you want. The condition works the opposite of the while loop</td>
+	<td><pre lang="python">
+Do Until age&gt;18
+    age = InputBox(“Please enter an age:”)
+Loop
+Messagebox.Show(“You are old enough to see the film”)
+</pre>This do until loop will repeat until the age is greater than 18. Every time the user enters an age if they enter a number less than 18 it will ask them again. When they enter an age over 18 it will then display the message box command that comes after the loop.</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+Dim arrayListName As New ArrayList()
+</pre></td>
+	<td>This will create a blank list with the name of your choice. This is an array but one in which you can easily add items to it in a list format.</td>
+	<td><pre lang="python">
+Dim names As New ArrayList()
+</pre>This will create a blank list called names that can then store multiple names when they are appended (added) to it.</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+ListName.Add(data)
+</pre></td>
+	<td>This will add the data that is in the brackets to the list. </td>
+	<td><pre lang="python">
+Dim names As New ArrayList()
+names.add(“Bob”)
+names.add(“Sally”)
+Messagebox.Show(names(1))
+</pre>This code will create a blank list called names and then add the names Bob and Sally to it.
+The print command at the end would print Sally as lists start at zero. The second name in the list is Sally which would be stored in element 1.
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+ceiling(number)
+</pre></td>
+	<td>This function rounds up a number to the nearest whole number. This is part of the math library</td>
+	<td><pre lang="python">
+Imports System.Math
+Dim number As Decimal = InputBox(“Enter a decimal number”)
+Dim roundup As Integer = ceiling(number)
+Messagebox.Show(roundup)
+</pre>When using the ceil function you must import the math library, the first line of code at the top does this.
+This program takes a decimal input from the user, then uses ceil to round it up to the next whole number and then prints it. E.g. if the user entered 5.345 it would print 6.
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+Dim variable As New Streamreader(filename)
+</pre></td>
+	<td>This will open a file to read the contents</td>
+	<td><pre lang="python">
+Dim fileReader As New StreamReader("C:\staff.csv")
+</pre>This will open a file called staff.csv with the variable name fileReader. <b>NOTE:</b> You must put the full path of the file within the brackets
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+Dim variable As New Streamreader(filename)
+Do While variable.EndOfStream = False
+   DO THIS CODE
+Loop
+</pre>
+line 2 being explained</td>
+	<td>This will create a loop that will repeat for the number of lines in hte file</td>
+	<td><pre lang="python">
+Dim fileReader As New StreamReader("C:\staff.csv")
+Do While fileReader.EndOfStream = False
+   MessageBox.Show(fileReader.ReadLine)
+Loop
+</pre>This will open a file called staff.csv and then read each line in the file. It will then display each line from the file in a message box one after another until all lines have been read.
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+Dim filevariable As New Streamreader(filename)
+Dim variable As Array
+Do While variable.EndOfStream = False
+   variable = filevariable.ReadLine.split(“,”)
+Loop
+</pre>
+line 2 &amp; 4 being explained</td>
+	<td>Line 2 - this defines the array that will store the line of information from the file when read.
+Line 4 - This will read a line from the file and split the contents of the line every time it finds a comma in a different element of the list/array.</td>
+	<td><pre lang="python">
+Dim fileReader As New StreamReader("C:\staff.csv")
+Dim details As Array
+Do While fileReader.EndOfStream = False
+   details = fileReader.ReadLine.Split(",")
+   MessageBox.Show(details(0))
+Loop
+</pre>This will open a file called staff.csv in read mode and then loop through the file. Each time through the loop it will read a line and split the contents of the line every time it reaches a comma into a different element of the array. It will then print whatever is in element 0 of that array. i.e. the first piece of data before the first comma.
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+Dim filevariable As New Streamreader(filename)
+Dim variable As Array
+Do While variable.EndOfStream = False
+   variable = filevariable.Readline.split(“,”)
+   If condition Then
+       DO IF MET
+   End If
+Loop
+</pre>
+line 5 &amp; 6 being explained</td>
+	<td>An if can be used to check pieces of data stored in the array and see if it matches what you want. You can then program it to respond in a particular way if it does.</td>
+	<td><pre lang="python">
+Dim email As String = txtEmail.Text
+Dim fileReader As New StreamReader("C:\staff.csv")
+Dim details As Array
+Do While fileReader.EndOfStream = False
+   details = fileReader.ReadLine.Split(",")
+   If details(2) = email Then
+       MessageBox.Show("Match Found")    
+Loop
+</pre>This code will do what the previous code did, but check to see if what is in element 2 of the array details matches the email address entered by the user. If it does it will say “Match found” in a message box.
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+filevariable.close()
+</pre></td>
+	<td>This will close the variable that has created the connection to the file.</td>
+	<td><pre lang="python">
+Dim fileReader As New StreamReader("C:\staff.csv")
+fileReader.close()
+</pre>This will close the connection to the file that it has just opened.
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+Dim variable As New StreamWriter("filename",True)
+</pre></td>
+	<td>This will open a connection to the file named in append mode.</td>
+	<td><pre lang="python">
+Dim fileWriter As New StreamWriter("C:\staff.csv",True)
+</pre>This will open a file called staff.csv in append mode with the variable name writefile. Append mode means ‘add’ to the file. The ,True after the filename means it will add to the file rather than overwrite what is in the file.
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+Dim variable As New StreamWriter("filename",True)
+variable.writeLine(data to write)
+</pre>line 2 being explained</td>
+	<td>This will write data to a file.</td>
+	<td><pre lang="python">
+Dim fileWriter As New StreamWriter("C:\staff.csv",True)
+fileWriter.writeLine("Bob" &amp; "," &amp; "Barnes" &amp; "," &amp; "Outwood Grange Academy")
+</pre>This will open a file called staff.csv in append mode. It will then write to the file the name of the staff member and the school they work at. You can also write variables to the file, like so:
+<pre lang="python">
+Dim firstname As String = txtFirstname.Text
+Dim surname As String = txtSurname.Text
+Dim school As String = txtSchool.Text
+Dim fileWriter As New StreamWriter("C:\staff.csv",True)
+fileWriter.writeLine(firstname &amp; "," &amp; surname &amp; "," &amp; school)
+</pre><b>NOTE:</b> The use of a comma (,) to separate each piece of data
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+Function functionname():
+   CODE to run in function
+End Function
+</pre></td>
+	<td>This will define a function that has no values passed into it.</td>
+	<td><pre lang="python">
+Function hello():
+   MessageBox.Show(“Hello from a function”)
+hello()
+</pre>This code creates a function called hello. Inside that function it has some code that says to print a message. After the function, in the main program it is called by typing the name of the function followed by two brackets ().
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+Function functioname(parameters):
+   CODE to run in function
+   Return variable/value
+End Function
+</pre></td>
+	<td>This will define a function that has a parameter passed into it to be used in the function. It also has a return value. <b>NOTE:</b> With a function you do not have to have a return value.</td>
+	<td><pre lang="python">
+Function multiply(ByVal a As Integer,ByVal b As Integer):
+   Dim answer As Integer = a * b
+   return answer
+
+Dim num1 As Integer = 10
+Dim num2 As Integer = 9
+MessageBox.Show(multiply(num1,num2))
+</pre>This code creates a function called multiply and has 2 values passed into it that are referred to as <b>a</b> and <b>b</b>. Inside the function it multiplies to the two together and returns the answer back to the main program. The main program below has two variables <b>num1</b> and <b>num2</b>. It passes these values into the function and prints the result.<pre lang="python">
+<pre lang="python">
+Function age(ByVal x As Integer):
+   If x &gt; 18 Then
+      MessageBox.Show(“Old enough to watch film”
+   Else
+      MessageBox.Show(“Not old enough to watch film”)
+   End If
+Dim age As Integer = txtAge.Text
+age(age)
+</pre></pre>This code uses a function and passes a parameter/value into it, however it does not return anything back to the main program.</td></tr>
+<tr>
+	<td><pre lang="python">
+variable = “text”
+print(variable[x])
+</pre></td>
+	<td>This is used to access characters in a string, by replacing the x for the character number you want.</td>
+	<td><pre lang="python">
+Dim word As String = “Hello World”
+Dim letter As Char = word(0)
+MessageBox.Show(letter)
+</pre>The code will access the first character <b>(0)</b> from the word variable and print the letter. In this example it would print <b>“H”</b></td></tr>
+<tr>
+	<td><pre lang="python">
+variable.StartsWith(‘x’)
+</pre></td>
+	<td>This checks if the variable starts with a particular character</td>
+	<td><pre lang="python">
+Dim word As String = “Hello World”
+word.StartsWith(“W”)
+</pre>This code would return <b>False</b> as the variable word does not start with a capital <b>W</b></td></tr>
+<tr>
+	<td><pre lang="python">
+variable.EndsWith(‘x’)
+</pre></td>
+	<td>This checks if the variable ends with a particular character</td>
+	<td><pre lang="python">
+Dim word As String = “Hello World”
+word.EndsWith(“d”)
+</pre>This code would return <b>True</b> as the variable word does end with a lower case <b>d</b></td></tr>
+<tr>
+	<td><pre lang="python">
+Len(variable)
+</pre></td>
+	<td>This is used to find the length of a variable</td>
+	<td><pre lang="python">
+Dim word As String = “Hello World”
+Len(word)
+</pre>The <b>len()</b> function will return the value 11 as there are 11 characters (including spaces)</td></tr>
+<tr>
+	<td><pre lang="python">
+Left(variable,x)
+</pre></td>
+	<td>This is use to get the x leftmost characters from a string</td>
+	<td><pre lang="python">
+Dim word As String = “Hello World”
+MessageBox.Show(Left(word,3))
+</pre>This example would display "Hel" in the message box as these are the three leftmost characters.</td></tr>
+<tr>
+	<td><pre lang="python">
+Right(variable,x)
+</pre></td>
+	<td>This is use to get the x rightmost characters from a string</td>
+	<td><pre lang="python">
+Dim word As String = “Hello World”
+MessageBox.Show(Right(word,2))
+</pre>This example would display "ld" in the message box as these are the two rightmost characters.</td></tr>
+<tr>
+	<td><pre lang="python">
+Mid(variable,x,y)
+</pre></td>
+	<td>This is use to get extract certain characters from a variable/string starting in the middle of the string</td>
+	<td><pre lang="python">
+Dim word As String = “Hello World”
+MessageBox.Show(Mid(word,4,5))
+</pre>This example would display "lo Wo" in the message box as it starts at character 4, the "l" and then displays the next 5 characters (including any spaces)</td></tr>
+<tr>
+	<td><pre lang="python">
+UCase(variable)
+</pre></td>
+	<td>This is used to change the case of a string or variable to upper case</td>
+	<td><pre lang="python">
+Dim word As String = “Hello World”
+MessageBox.Show(UCase(word))
+</pre>This code would display <b>HELLO WORLD</b> on screen</td></tr>
+<tr>
+	<td><pre lang="python">
+LCase(variable)
+</pre></td>
+	<td>This is used to change the case of a string or variable to lower case</td>
+	<td><pre lang="python">
+Dim word As String = “Hello World”
+MessageBox.Show(LCase(word))
+</pre>This code would display <b>hello world</b> on screen
+</td></tr>
+<tr>
+	<td><pre lang="python">
+IsNumeric(variable)
+</pre></td>
+	<td>This checks if the variable only contains digits</td>
+	<td><pre lang="python">
+Dim number As String = "12345"
+IsNumeric(number)
+</pre>This code would return <b>True</b> as the variable number contains only digits</td></tr>
+<tr>
+	<td><pre lang="python">
+Abs(variable)
+</pre></td>
+	<td>This finds the absolute value of a variable i.e. removes any negative</td>
+	<td><pre lang="python">
+Imports System.Math
+Dim number As Decimal = -45.65
+Dim answer As Decimal = Abs(number)
+MessageBox.Show(answer)</pre>This code would return <b>45.65</b> as <b>Abs()</b> removes any negative from a number</td></tr>
+<tr>
+	<td><pre lang="python">
+Ceiling(variable)
+</pre></td>
+	<td>This finds the next whole number up from the number entered</td>
+	<td><pre lang="python">
+Imports System.Math
+Dim number As Decimal = 45.23
+Dim answer As Decimal = Ceiling(number)
+MessageBox.Show(answer)</pre>This code would return <b>46</b> as <b>Ceiling()</b> always rounds up to the next whole number</td></tr>
+<tr>
+	<td><pre lang="python">
+Floor(variable)
+</pre></td>
+	<td>This finds the next whole number down from the number entered</td>
+	<td><pre lang="python">
+Imports System.Math
+Dim number As Decimal = 45.78
+Dim answer As Decimal = Floor(number)
+MessageBox.Show(answer)</pre>This code would return <b>45</b> as <b>Floor()</b> always rounds down to the next whole number</td></tr>
+<tr>
+	<td><pre lang="python">
+Sqrt(variable)
+</pre></td>
+	<td>This finds square root of a variable</td>
+	<td><pre lang="python">
+Imports System.Math
+Dim number As Integer = 16
+Dim answer As Decimal = Sqrt(number)
+MessageBox.Show(answer)</pre>This code would return <b>4</b> as <b>sqrt()</b> square roots a number, the square root of 16 is 4.</td></tr>
+<tr>
+	<td><pre lang="python">
+Ceiling(variable / 10) * 10
+</pre></td>
+	<td>This finds the next higher multiple of 10 from the value in the variable.</td>
+	<td><pre lang="python">
+Imports System.Math
+Dim number As Integer = 16
+Dim answer As Integer= ceil(number / 10) * 10
+MessageBox.Show(answer)</pre>This code would return <b>20</b> as the next multiple of 10 from 16 is 20.</td></tr>
+&lt;/table&gt;
+</td></tr></table>
+</div>
+
+    
+</div>
+
+
+        <footer class="bs-docs-footer" role="contentinfo">
+    <div class="container">
+        <div class="bs-docs-social">
+            <ul class="bs-docs-social-buttons">
+                
+            </ul>
+        </div>
+
+        <p>
+            OGAT Computer Science 2017. v1.2</a>
+        </p>
+        <p>
+        </p>
+
+
+    </div>
+</footer>
+
+
+
+
+
+    </body>
+</html>
